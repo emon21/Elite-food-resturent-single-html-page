@@ -15,6 +15,13 @@
 
     <!-- google Fonts -->
 
+     <!-- Add the slick-theme.css if you want default styling -->
+     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+     <!-- Add the slick-theme.css if you want default styling -->
+     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+     
+
     <!-- custom css link -->
 
     <link href="./public/style.css" rel="stylesheet">
@@ -43,13 +50,29 @@
 
                     <!-- menu -->
                     <ul class="capitalize flex py-[11px] gap-8 font-inter text-base z-50 top-menu">
-                        <li class="hover:font-bold transition duration-500"><a href="#" class="">home</a></li>
-                        <li><a href="#" class="">menu</a></li>
-                        <li class=""><a href="#" class="">blog</a></li>
-                        <li><a href="#">pages</a></li>
-                        <li><a href="#">about</a></li>
-                        <li><a href="#">shop</a></li>
-                        <li><a href="#">contact</a></li>
+
+                        <li class="">
+                            <a class="hover:font-bold hover:no-underline hover:border-[#195A00] border-b-red-600 border-b border-b-transparent pb-1 transition duration-300 " href="#" class="">home</a>
+                        </li>
+
+                        <li>
+                            <a class="hover:font-bold hover:no-underline hover:border-[#195A00] border-b-red-600 border-b border-b-transparent pb-1 transition duration-300" href="#" class="">menu</a>
+                        </li>
+                        <li class="">
+                            <a class="hover:font-bold hover:no-underline hover:border-[#195A00] border-b-red-600 border-b border-b-transparent pb-1 transition duration-300" href="#" class="">blog</a>
+                        </li>
+                        <li>
+                            <a class="hover:font-bold hover:no-underline hover:border-[#195A00] border-b-red-600 border-b border-b-transparent pb-1 transition duration-300" href="#">pages</a>
+                        </li>
+                        <li>
+                            <a class="hover:font-bold hover:no-underline hover:border-[#195A00] border-b-red-600 border-b border-b-transparent pb-1 transition duration-300" href="#">about</a>
+                        </li>
+                        <li>
+                            <a class="hover:font-bold hover:no-underline hover:border-[#195A00] border-b-red-600 border-b border-b-transparent pb-1 transition duration-300" href="#">shop</a>
+                        </li>
+                        <li>
+                            <a class="hover:font-bold hover:no-underline hover:border-[#195A00] border-b-red-600 border-b border-b-transparent pb-1 transition duration-300" href="#">contact</a>
+                        </li>
                     </ul>
 
 
@@ -122,9 +145,8 @@
                 <div class="w-[521px]">
                     <h4 class="font-miniver text-lg text-[#195A00] leading-[26px] pb-2">Healthy & Testy Food</h4>
                     <div class="flex pb-8 relative">
-                        <h1 class="font-bold font-Helvetica text-[60px] leading-[68px] text-[#333333]">Enjoy Healthy
-                            Life
-                            & Testy Food.</h1>
+                        <h1 class="font-bold font-Helvetica text-[60px] leading-[68px] text-[#333333]">
+                            Enjoy Healthy Life & Testy Food.</h1>
                         <span class="absolute left-[399px] top-[70px]">
                             <svg width="83" height="83" viewBox="0 0 83 83" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -166,8 +188,9 @@
                 <!-- right item -->
             </div>
 
-            <div class="flex mx-auto relative z-50">
-                <a href="">Scrolldowan</a>
+            <div class="grid grid-cols-1  gap-4 relative ">
+                <a href="#" class="text-center">Scrolldowan</a>
+                <span class="border-l-2 pl-2 h-10 mx-auto"></span>
             </div>
         </div>
     </section>
@@ -248,7 +271,7 @@
                 <!-- <img src="img/unsplash_x1ZZWyDU8sU.png" alt="" class="absolute left-[968px]"> -->
             </div>
             <!-- food category -->
-            <div class="pt-14 flex gap-6 items-center">
+            <div class="pt-14 flex gap-6 items-center single-item">
                 <!-- food item -->
                 <div class="w-[312px]">
                     <img src="img/food.png" alt="">
@@ -257,6 +280,23 @@
                         <p>26 Item</p>
                     </div>
                 </div>
+
+                <div class="w-[312px]">
+                    <img src="img/food.png" alt="">
+                    <div class="text-center">
+                        <h4 class="pt-4 pb-2">Grand Italiano</h4>
+                        <p>26 Item</p>
+                    </div>
+                </div>
+
+                <div class="w-[312px]">
+                    <img src="img/food.png" alt="">
+                    <div class="text-center">
+                        <h4 class="pt-4 pb-2">Grand Italiano</h4>
+                        <p>26 Item</p>
+                    </div>
+                </div>
+
                 <div class="w-[312px]">
                     <img src="img/food.png" alt="">
                     <div class="text-center">
@@ -278,6 +318,21 @@
                         <p>26 Item</p>
                     </div>
                 </div>
+                <div class="w-[312px]">
+                    <img src="img/food.png" alt="">
+                    <div class="text-center">
+                        <h4 class="pt-4 pb-2">Grand Italiano</h4>
+                        <p>26 Item</p>
+                    </div>
+                </div>
+                <div class="w-[312px]">
+                    <img src="img/food.png" alt="">
+                    <div class="text-center">
+                        <h4 class="pt-4 pb-2">Grand Italiano</h4>
+                        <p>26 Item</p>
+                    </div>
+                </div>
+
                 <!-- food item ends -->
             </div>
             <!-- food category end -->
@@ -437,23 +492,503 @@
     <!-- food menu -->
     <section class="pt-[126px]">
         <div class="container">
-            <div class="mx-auto text-center">
-                <h2 class="pb-2 font-bold text-[48px] leading-[56px] text-[#333333]">Our Food Menu</h2>
+            <div class="w-[1320px] text-center">
+                
+                    <div class="text-center">
+<h2 class="pb-2 font-bold text-[48px] leading-[56px] text-[#333333]">Our Food Menu</h2>
                 <p class="text-base text-[#4F4F4F] pb-[56px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Varius sed pharetra dictum neque massa congue</p>
-                <div class="">
-                    <ul class="flex ">
-                        <li><a class="text-center" href="">Breck fast</a></li>
-                        <li><a class="text-center" href="">Breck fast</a></li>
-                        <li><a class="text-center" href="">Breck fast</a></li>
-                        <li><a class="text-center" href="">Breck fast</a></li>
-                    </ul>
-                    <hr>
+                    </div>
+                
+            <div class="">
+                <ul class="flex w-[622px] mx-auto">
+                    <li class="py-4 pl-[46px]"><a class="hover:text-[#195A00] hover:no-underline hover:font-bold transition duration-300" href="">Breakfast</a></li>
+                    <li class="py-4 pl-[46px]"><a class="hover:text-[#195A00] hover:no-underline hover:font-bold transition duration-300" href="">Lunch</a></li>
+                    <li class="py-4 pl-[46px]"><a class="hover:text-[#195A00] hover:no-underline hover:font-bold transition duration-300" href="">Dinner</a></li>
+                    <li class="py-4 pl-[46px]"><a class="hover:text-[#195A00] hover:no-underline hover:font-bold transition duration-300" href="">Dessert</a></li>
+                    <li class="py-4 pl-[46px]"><a class="hover:text-[#195A00] hover:no-underline hover:font-bold transition duration-300" href="">Drink</a></li>
+                    <li class="py-4 pl-[46px]"><a class="hover:text-[#195A00] hover:no-underline hover:font-bold transition duration-300" href="">Snack</a></li>
+                </ul>
+                <hr>
+
+                <div class="flex justify-between pt-[56px] text-start">
+                    <!-- left -->
+                        <div class="">
+                            <div class="flex justify-between  mb-4 w-[648px] gap-6 border-b  pb-4 hover:text-green-700">
+                                <div class="">
+                                    <h2 class="font-bold text-2xl  hasib pb-[7px]">Alder Grilled Chinook Salmon</h2>
+                                    <p class="text-[#4F4F4F] text-base pb-2">Toasted French bread topped with romano, cheddar</p>
+                                    <span class="text-[#828282] text-base">560 CAL</span>
+                                </div>
+                                <div>
+                                    <span class="text-[#195A00] font-bold text-[24px] leading-8 bottom-0">32$</span>
+                                </div>
+                            </div>
+        
+                            <div class="flex justify-between  mb-4 w-[648px] gap-6 border-b  pb-4 hover:text-green-700">
+                                <div class="">
+                                    <h2 class="font-bold text-2xl  hasib pb-[7px]">Alder Grilled Chinook Salmon</h2>
+                                    <p class="text-[#4F4F4F] text-base pb-2">Toasted French bread topped with romano, cheddar</p>
+                                    <span class="text-[#828282] text-base">560 CAL</span>
+                                </div>
+                                <div>
+                                    <span class="text-[#195A00] font-bold text-[24px] leading-8 bottom-0">32$</span>
+                                </div>
+                            </div>
+        
+                            <div class="flex justify-between  mb-4 w-[648px] gap-6 border-b  pb-4 hover:text-green-700">
+                                <div class="">
+                                    <h2 class="font-bold text-2xl  hasib pb-[7px]">Alder Grilled Chinook Salmon</h2>
+                                    <p class="text-[#4F4F4F] text-base pb-2">Toasted French bread topped with romano, cheddar</p>
+                                    <span class="text-[#828282] text-base">560 CAL</span>
+                                </div>
+                                <div>
+                                    <span class="text-[#195A00] font-bold text-[24px] leading-8 bottom-0">32$</span>
+                                </div>
+                            </div>
+        
+                            <div class="flex justify-between  mb-4 w-[648px] gap-6 border-b  pb-4 hover:text-green-700">
+                                <div class="">
+                                    <h2 class="font-bold text-2xl  hasib pb-[7px]">Alder Grilled Chinook Salmon</h2>
+                                    <p class="text-[#4F4F4F] text-base pb-2">Toasted French bread topped with romano, cheddar</p>
+                                    <span class="text-[#828282] text-base">560 CAL</span>
+                                </div>
+                                <div>
+                                    <span class="text-[#195A00] font-bold text-[24px] leading-8 bottom-0">32$</span>
+                                </div>
+                            </div>
+                        </div>
+                    
+
+                    <!-- left -->
+                    <!-- right -->
+                    <div class="">
+                        <div class="flex justify-between  mb-4 w-[648px] gap-6 border-b  pb-4 hover:text-green-700">
+                            <div class="">
+                                <h2 class="font-bold text-2xl  hasib pb-[7px]">Alder Grilled Chinook Salmon</h2>
+                                <p class="text-[#4F4F4F] text-base pb-2">Toasted French bread topped with romano, cheddar</p>
+                                <span class="text-[#828282] text-base">560 CAL</span>
+                            </div>
+                            <div>
+                                <span class="text-[#195A00] font-bold text-[24px] leading-8 bottom-0">32$</span>
+                            </div>
+                        </div>
+    
+                        <div class="flex justify-between  mb-4 w-[648px] gap-6 border-b  pb-4 hover:text-green-700">
+                            <div class="">
+                                <h2 class="font-bold text-2xl  hasib pb-[7px]">Alder Grilled Chinook Salmon</h2>
+                                <p class="text-[#4F4F4F] text-base pb-2">Toasted French bread topped with romano, cheddar</p>
+                                <span class="text-[#828282] text-base">560 CAL</span>
+                            </div>
+                            <div>
+                                <span class="text-[#195A00] font-bold text-[24px] leading-8 bottom-0">32$</span>
+                            </div>
+                        </div>
+    
+                        <div class="flex justify-between  mb-4 w-[648px] gap-6 border-b  pb-4 hover:text-green-700">
+                            <div class="">
+                                <h2 class="font-bold text-2xl  hasib pb-[7px]">Alder Grilled Chinook Salmon</h2>
+                                <p class="text-[#4F4F4F] text-base pb-2">Toasted French bread topped with romano, cheddar</p>
+                                <span class="text-[#828282] text-base">560 CAL</span>
+                            </div>
+                            <div>
+                                <span class="text-[#195A00] font-bold text-[24px] leading-8 bottom-0">32$</span>
+                            </div>
+                        </div>
+    
+                        <div class="flex justify-between  mb-4 w-[648px] gap-6 border-b  pb-4 hover:text-green-700">
+                            <div class="">
+                                <h2 class="font-bold text-2xl  hasib pb-[7px]">Alder Grilled Chinook Salmon</h2>
+                                <p class="text-[#4F4F4F] text-base pb-2">Toasted French bread topped with romano, cheddar</p>
+                                <span class="text-[#828282] text-base">560 CAL</span>
+                            </div>
+                            <div>
+                                <span class="text-[#195A00] font-bold text-[24px] leading-8 bottom-0">32$</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- right -->
+                    
                 </div>
+               
+                <button class="px-12 py-4 border rounded-md text-[#195A00] text-lg hover:bg-[#195A00] transition duration-500 hover:text-white mx-auto ">View Menu</button>
+
+            </div>
+        </div>
+        </div>
+        
+        
+    </section>
+    <!-- food menu end -->
+
+<!-- khalil -->
+<div class="bg-green-500 text-center p-24">
+   <div class="text-lg"> Team Member</div>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius sed pharetra dictum neque massa congue
+</div>
+<div>
+    <div class="card"></div>
+</div>
+<!-- khalil end -->
+
+    <!-- team -->
+    <section class="bg-[#195A00] mt-[199px]">
+
+        <div class="container">
+            <div class="w-[418px] mx-auto text-center">
+<h2 class="text-white font-bold text-[48px] leading-[56px] pt-[120px] pb-2">Team Member</h2>
+<p class="text-white text-base pb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Varius sed pharetra dictum neque massa congue</p>
+            </div>
+
+            <!-- our team -->
+            <div class="flex gap-4">
+                <!-- team item -->
+                <div class="w-[312px] h-[310px]  bg-white relative">
+                    <div>
+                        <img src="img/unsplash_v3OlBE6-fhU.png" alt="" class="h-[310px] w-full">
+                    </div>
+                    <div class="text-center h-[88px] shadow-[0px_0px_80px_rgba(205,205,205,0.25)]">
+                        <h2 class="pt-4 text-[20px] leading-7 font-bold">Tom Monrow</h2>
+                        <p>Specialist</p>
+                    </div>
+                    <!-- overly eiffects -->
+ <div class="absolute overflow-hidden top-0 left-0 right-0 h-[310px] bg-gradient-to-r from-[#8490ff] to-[#62bdfc] opacity-0 hover:opacity-90 transition duration-500 cursor-pointer text-center">
+    <div class="py-16">
+       <!-- social icon -->
+        
+       <ul class="text-white w-10 h-10 mx-auto pt-2 flex-wrap gap-3  items-center">
+        <li class="pb-3 hover:scale-110 transition ease-in-out duration-300">
+            <a href="#">
+            <svg width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 1.99994C0 0.895369 0.895431 -6.10352e-05 2 -6.10352e-05H34C35.1046 -6.10352e-05 36 0.89537 36 1.99994V32.9999C36 34.1045 35.1046 34.9999 34 34.9999H2C0.895431 34.9999 0 34.1045 0 32.9999V1.99994Z" fill="#F2F2F2"/>
+            <path d="M21.7188 18.9999L22.1562 16.1249H19.375V14.2499C19.375 13.4374 19.75 12.6874 21 12.6874H22.2812V10.2187C22.2812 10.2187 21.125 9.99994 20.0312 9.99994C17.75 9.99994 16.25 11.4062 16.25 13.9062V16.1249H13.6875V18.9999H16.25V25.9999H19.375V18.9999H21.7188Z" fill="#4F4F4F"/>
+            </svg>
+            </a>
+        </li>
+        <li class="pb-3 hover:scale-110 transition ease-in-out duration-300">
+            <a href="#">
+                <svg width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 2C0 0.89543 0.895431 0 2 0H34C35.1046 0 36 0.895431 36 2V33C36 34.1046 35.1046 35 34 35H2C0.895431 35 0 34.1046 0 33V2Z" fill="#F2F2F2"/>
+                    <path d="M25.3438 14.75C25.9688 14.2812 26.5312 13.7188 26.9688 13.0625C26.4062 13.3125 25.75 13.5 25.0938 13.5625C25.7812 13.1562 26.2812 12.5312 26.5312 11.75C25.9062 12.125 25.1875 12.4062 24.4688 12.5625C23.8438 11.9062 23 11.5312 22.0625 11.5312C20.25 11.5312 18.7812 13 18.7812 14.8125C18.7812 15.0625 18.8125 15.3125 18.875 15.5625C16.1562 15.4062 13.7188 14.0938 12.0938 12.125C11.8125 12.5938 11.6562 13.1562 11.6562 13.7812C11.6562 14.9062 12.2188 15.9062 13.125 16.5C12.5938 16.4688 12.0625 16.3438 11.625 16.0938V16.125C11.625 17.7188 12.75 19.0312 14.25 19.3438C14 19.4062 13.6875 19.4688 13.4062 19.4688C13.1875 19.4688 13 19.4375 12.7812 19.4062C13.1875 20.7188 14.4062 21.6562 15.8438 21.6875C14.7188 22.5625 13.3125 23.0938 11.7812 23.0938C11.5 23.0938 11.25 23.0625 11 23.0312C12.4375 23.9688 14.1562 24.5 16.0312 24.5C22.0625 24.5 25.3438 19.5312 25.3438 15.1875C25.3438 15.0312 25.3438 14.9062 25.3438 14.75Z" fill="#4F4F4F"/>
+                    </svg>
+                    
+            </a>
+        </li>
+        <li class="pb-3 hover:scale-110 transition ease-in-out duration-300">
+            <a href="#">
+                <svg width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 2C0 0.89543 0.895431 0 2 0H34C35.1046 0 36 0.89543 36 2V33C36 34.1046 35.1046 35 34 35H2C0.895431 35 0 34.1046 0 33V2Z" fill="#FF9F0D"/>
+                    <path d="M26.1562 12.9062C25.9688 12.1562 25.375 11.5625 24.6562 11.375C23.3125 11 18 11 18 11C18 11 12.6562 11 11.3125 11.375C10.5938 11.5625 10 12.1562 9.8125 12.9062C9.4375 14.2188 9.4375 17.0312 9.4375 17.0312C9.4375 17.0312 9.4375 19.8125 9.8125 21.1562C10 21.9062 10.5938 22.4688 11.3125 22.6562C12.6562 23 18 23 18 23C18 23 23.3125 23 24.6562 22.6562C25.375 22.4688 25.9688 21.9062 26.1562 21.1562C26.5312 19.8125 26.5312 17.0312 26.5312 17.0312C26.5312 17.0312 26.5312 14.2188 26.1562 12.9062ZM16.25 19.5625V14.5L20.6875 17.0312L16.25 19.5625Z" fill="#F2F2F2"/>
+                    </svg>
+                    
+            </a>
+        </li>
+        <li class="pb-3 hover:scale-110 transition ease-in-out duration-300">
+            <a href="#">
+                <svg width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 2C0 0.89543 0.895431 0 2 0H34C35.1046 0 36 0.89543 36 2V33C36 34.1046 35.1046 35 34 35H2C0.895431 35 0 34.1046 0 33V2Z" fill="#F2F2F2"/>
+                    <path d="M25.75 18C25.75 13.7188 22.2812 10.25 18 10.25C13.7188 10.25 10.25 13.7188 10.25 18C10.25 21.3125 12.2812 24.0938 15.1562 25.2188C15.0938 24.625 15.0312 23.6875 15.1875 23C15.3438 22.4062 16.0938 19.1562 16.0938 19.1562C16.0938 19.1562 15.875 18.6875 15.875 18C15.875 16.9375 16.5 16.125 17.2812 16.125C17.9375 16.125 18.25 16.625 18.25 17.2188C18.25 17.875 17.8125 18.875 17.5938 19.8125C17.4375 20.5625 18 21.1875 18.75 21.1875C20.125 21.1875 21.1875 19.75 21.1875 17.6562C21.1875 15.7812 19.8438 14.5 17.9688 14.5C15.75 14.5 14.4688 16.1562 14.4688 17.8438C14.4688 18.5312 14.7188 19.25 15.0312 19.625C15.0938 19.6875 15.0938 19.7812 15.0938 19.8438C15.0312 20.0938 14.875 20.625 14.875 20.7188C14.8438 20.875 14.75 20.9062 14.5938 20.8438C13.625 20.375 13.0312 18.9688 13.0312 17.8125C13.0312 15.375 14.8125 13.125 18.1562 13.125C20.8438 13.125 22.9375 15.0625 22.9375 17.625C22.9375 20.2812 21.25 22.4375 18.9062 22.4375C18.125 22.4375 17.375 22.0312 17.125 21.5312C17.125 21.5312 16.75 23.0312 16.6562 23.375C16.4688 24.0625 16 24.9062 15.6875 25.4062C16.4062 25.6562 17.1875 25.75 18 25.75C22.2812 25.75 25.75 22.2812 25.75 18Z" fill="#4F4F4F"/>
+                    </svg>
+                    
+            </a>
+        </li>
+       
+    </ul>
+
+       <!-- social icon -->
+    </div>
+</div>
+<!-- overly eiffects -->
+                </div>
+
+                <div class="w-[312px] h-[310px] bg-white relative">
+                    <div>
+                        <img src="img/unsplash_v3OlBE6-fhU.png" alt="" class="h-[310px] w-full">
+                    </div>
+                    <div class="text-center h-[88px] shadow-[0px_0px_80px_rgba(205,205,205,0.25)]">
+                        <h2 class="pt-4 text-[20px] leading-7 font-bold">Tom Monrow</h2>
+                        <p>Specialist</p>
+                    </div>
+                    <!-- overly eiffects -->
+ <div class="absolute overflow-hidden top-0 left-0 right-0 h-[310px] bg-gradient-to-r from-[#8490ff] to-[#62bdfc] opacity-0 hover:opacity-90 transition duration-500 cursor-pointer text-center">
+    <div class="py-16">
+       <!-- social icon -->
+        
+       <ul class="text-white w-10 h-10 mx-auto pt-2 flex-wrap gap-3  items-center">
+        <li class="pb-3 hover:scale-110 transition ease-in-out duration-300">
+            <a href="#">
+            <svg width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 1.99994C0 0.895369 0.895431 -6.10352e-05 2 -6.10352e-05H34C35.1046 -6.10352e-05 36 0.89537 36 1.99994V32.9999C36 34.1045 35.1046 34.9999 34 34.9999H2C0.895431 34.9999 0 34.1045 0 32.9999V1.99994Z" fill="#F2F2F2"/>
+            <path d="M21.7188 18.9999L22.1562 16.1249H19.375V14.2499C19.375 13.4374 19.75 12.6874 21 12.6874H22.2812V10.2187C22.2812 10.2187 21.125 9.99994 20.0312 9.99994C17.75 9.99994 16.25 11.4062 16.25 13.9062V16.1249H13.6875V18.9999H16.25V25.9999H19.375V18.9999H21.7188Z" fill="#4F4F4F"/>
+            </svg>
+            </a>
+        </li>
+        <li class="pb-3 hover:scale-110 transition ease-in-out duration-300">
+            <a href="#">
+                <svg width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 2C0 0.89543 0.895431 0 2 0H34C35.1046 0 36 0.895431 36 2V33C36 34.1046 35.1046 35 34 35H2C0.895431 35 0 34.1046 0 33V2Z" fill="#F2F2F2"/>
+                    <path d="M25.3438 14.75C25.9688 14.2812 26.5312 13.7188 26.9688 13.0625C26.4062 13.3125 25.75 13.5 25.0938 13.5625C25.7812 13.1562 26.2812 12.5312 26.5312 11.75C25.9062 12.125 25.1875 12.4062 24.4688 12.5625C23.8438 11.9062 23 11.5312 22.0625 11.5312C20.25 11.5312 18.7812 13 18.7812 14.8125C18.7812 15.0625 18.8125 15.3125 18.875 15.5625C16.1562 15.4062 13.7188 14.0938 12.0938 12.125C11.8125 12.5938 11.6562 13.1562 11.6562 13.7812C11.6562 14.9062 12.2188 15.9062 13.125 16.5C12.5938 16.4688 12.0625 16.3438 11.625 16.0938V16.125C11.625 17.7188 12.75 19.0312 14.25 19.3438C14 19.4062 13.6875 19.4688 13.4062 19.4688C13.1875 19.4688 13 19.4375 12.7812 19.4062C13.1875 20.7188 14.4062 21.6562 15.8438 21.6875C14.7188 22.5625 13.3125 23.0938 11.7812 23.0938C11.5 23.0938 11.25 23.0625 11 23.0312C12.4375 23.9688 14.1562 24.5 16.0312 24.5C22.0625 24.5 25.3438 19.5312 25.3438 15.1875C25.3438 15.0312 25.3438 14.9062 25.3438 14.75Z" fill="#4F4F4F"/>
+                    </svg>
+                    
+            </a>
+        </li>
+        <li class="pb-3 hover:scale-110 transition ease-in-out duration-300">
+            <a href="#">
+                <svg width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 2C0 0.89543 0.895431 0 2 0H34C35.1046 0 36 0.89543 36 2V33C36 34.1046 35.1046 35 34 35H2C0.895431 35 0 34.1046 0 33V2Z" fill="#FF9F0D"/>
+                    <path d="M26.1562 12.9062C25.9688 12.1562 25.375 11.5625 24.6562 11.375C23.3125 11 18 11 18 11C18 11 12.6562 11 11.3125 11.375C10.5938 11.5625 10 12.1562 9.8125 12.9062C9.4375 14.2188 9.4375 17.0312 9.4375 17.0312C9.4375 17.0312 9.4375 19.8125 9.8125 21.1562C10 21.9062 10.5938 22.4688 11.3125 22.6562C12.6562 23 18 23 18 23C18 23 23.3125 23 24.6562 22.6562C25.375 22.4688 25.9688 21.9062 26.1562 21.1562C26.5312 19.8125 26.5312 17.0312 26.5312 17.0312C26.5312 17.0312 26.5312 14.2188 26.1562 12.9062ZM16.25 19.5625V14.5L20.6875 17.0312L16.25 19.5625Z" fill="#F2F2F2"/>
+                    </svg>
+                    
+            </a>
+        </li>
+        <li class="pb-3 hover:scale-110 transition ease-in-out duration-300">
+            <a href="#">
+                <svg width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 2C0 0.89543 0.895431 0 2 0H34C35.1046 0 36 0.89543 36 2V33C36 34.1046 35.1046 35 34 35H2C0.895431 35 0 34.1046 0 33V2Z" fill="#F2F2F2"/>
+                    <path d="M25.75 18C25.75 13.7188 22.2812 10.25 18 10.25C13.7188 10.25 10.25 13.7188 10.25 18C10.25 21.3125 12.2812 24.0938 15.1562 25.2188C15.0938 24.625 15.0312 23.6875 15.1875 23C15.3438 22.4062 16.0938 19.1562 16.0938 19.1562C16.0938 19.1562 15.875 18.6875 15.875 18C15.875 16.9375 16.5 16.125 17.2812 16.125C17.9375 16.125 18.25 16.625 18.25 17.2188C18.25 17.875 17.8125 18.875 17.5938 19.8125C17.4375 20.5625 18 21.1875 18.75 21.1875C20.125 21.1875 21.1875 19.75 21.1875 17.6562C21.1875 15.7812 19.8438 14.5 17.9688 14.5C15.75 14.5 14.4688 16.1562 14.4688 17.8438C14.4688 18.5312 14.7188 19.25 15.0312 19.625C15.0938 19.6875 15.0938 19.7812 15.0938 19.8438C15.0312 20.0938 14.875 20.625 14.875 20.7188C14.8438 20.875 14.75 20.9062 14.5938 20.8438C13.625 20.375 13.0312 18.9688 13.0312 17.8125C13.0312 15.375 14.8125 13.125 18.1562 13.125C20.8438 13.125 22.9375 15.0625 22.9375 17.625C22.9375 20.2812 21.25 22.4375 18.9062 22.4375C18.125 22.4375 17.375 22.0312 17.125 21.5312C17.125 21.5312 16.75 23.0312 16.6562 23.375C16.4688 24.0625 16 24.9062 15.6875 25.4062C16.4062 25.6562 17.1875 25.75 18 25.75C22.2812 25.75 25.75 22.2812 25.75 18Z" fill="#4F4F4F"/>
+                    </svg>
+                    
+            </a>
+        </li>
+       
+    </ul>
+
+       <!-- social icon -->
+    </div>
+</div>
+<!-- overly eiffects -->
+                </div>
+
+                <div class="w-[312px] h-[310px] bg-white relative">
+                    <div>
+                        <img src="img/unsplash_v3OlBE6-fhU.png" alt="" class="h-[310px] w-full">
+                    </div>
+                    <div class="text-center h-[88px] shadow-[0px_0px_80px_rgba(205,205,205,0.25)]">
+                        <h2 class="pt-4 text-[20px] leading-7 font-bold">Tom Monrow</h2>
+                        <p>Specialist</p>
+                    </div>
+                    <!-- overly eiffects -->
+ <div class="absolute overflow-hidden top-0 left-0 right-0 h-[310px] bg-gradient-to-r from-[#8490ff] to-[#62bdfc] opacity-0 hover:opacity-90 transition duration-500 cursor-pointer text-center">
+    <div class="py-16">
+       <!-- social icon -->
+        
+       <ul class="text-white w-10 h-10 mx-auto pt-2 flex-wrap gap-3  items-center">
+        <li class="pb-3 hover:scale-110 transition ease-in-out duration-300">
+            <a href="#">
+            <svg width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 1.99994C0 0.895369 0.895431 -6.10352e-05 2 -6.10352e-05H34C35.1046 -6.10352e-05 36 0.89537 36 1.99994V32.9999C36 34.1045 35.1046 34.9999 34 34.9999H2C0.895431 34.9999 0 34.1045 0 32.9999V1.99994Z" fill="#F2F2F2"/>
+            <path d="M21.7188 18.9999L22.1562 16.1249H19.375V14.2499C19.375 13.4374 19.75 12.6874 21 12.6874H22.2812V10.2187C22.2812 10.2187 21.125 9.99994 20.0312 9.99994C17.75 9.99994 16.25 11.4062 16.25 13.9062V16.1249H13.6875V18.9999H16.25V25.9999H19.375V18.9999H21.7188Z" fill="#4F4F4F"/>
+            </svg>
+            </a>
+        </li>
+        <li class="pb-3 hover:scale-110 transition ease-in-out duration-300">
+            <a href="#">
+                <svg width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 2C0 0.89543 0.895431 0 2 0H34C35.1046 0 36 0.895431 36 2V33C36 34.1046 35.1046 35 34 35H2C0.895431 35 0 34.1046 0 33V2Z" fill="#F2F2F2"/>
+                    <path d="M25.3438 14.75C25.9688 14.2812 26.5312 13.7188 26.9688 13.0625C26.4062 13.3125 25.75 13.5 25.0938 13.5625C25.7812 13.1562 26.2812 12.5312 26.5312 11.75C25.9062 12.125 25.1875 12.4062 24.4688 12.5625C23.8438 11.9062 23 11.5312 22.0625 11.5312C20.25 11.5312 18.7812 13 18.7812 14.8125C18.7812 15.0625 18.8125 15.3125 18.875 15.5625C16.1562 15.4062 13.7188 14.0938 12.0938 12.125C11.8125 12.5938 11.6562 13.1562 11.6562 13.7812C11.6562 14.9062 12.2188 15.9062 13.125 16.5C12.5938 16.4688 12.0625 16.3438 11.625 16.0938V16.125C11.625 17.7188 12.75 19.0312 14.25 19.3438C14 19.4062 13.6875 19.4688 13.4062 19.4688C13.1875 19.4688 13 19.4375 12.7812 19.4062C13.1875 20.7188 14.4062 21.6562 15.8438 21.6875C14.7188 22.5625 13.3125 23.0938 11.7812 23.0938C11.5 23.0938 11.25 23.0625 11 23.0312C12.4375 23.9688 14.1562 24.5 16.0312 24.5C22.0625 24.5 25.3438 19.5312 25.3438 15.1875C25.3438 15.0312 25.3438 14.9062 25.3438 14.75Z" fill="#4F4F4F"/>
+                    </svg>
+                    
+            </a>
+        </li>
+        <li class="pb-3 hover:scale-110 transition ease-in-out duration-300">
+            <a href="#">
+                <svg width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 2C0 0.89543 0.895431 0 2 0H34C35.1046 0 36 0.89543 36 2V33C36 34.1046 35.1046 35 34 35H2C0.895431 35 0 34.1046 0 33V2Z" fill="#FF9F0D"/>
+                    <path d="M26.1562 12.9062C25.9688 12.1562 25.375 11.5625 24.6562 11.375C23.3125 11 18 11 18 11C18 11 12.6562 11 11.3125 11.375C10.5938 11.5625 10 12.1562 9.8125 12.9062C9.4375 14.2188 9.4375 17.0312 9.4375 17.0312C9.4375 17.0312 9.4375 19.8125 9.8125 21.1562C10 21.9062 10.5938 22.4688 11.3125 22.6562C12.6562 23 18 23 18 23C18 23 23.3125 23 24.6562 22.6562C25.375 22.4688 25.9688 21.9062 26.1562 21.1562C26.5312 19.8125 26.5312 17.0312 26.5312 17.0312C26.5312 17.0312 26.5312 14.2188 26.1562 12.9062ZM16.25 19.5625V14.5L20.6875 17.0312L16.25 19.5625Z" fill="#F2F2F2"/>
+                    </svg>
+                    
+            </a>
+        </li>
+        <li class="pb-3 hover:scale-110 transition ease-in-out duration-300">
+            <a href="#">
+                <svg width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 2C0 0.89543 0.895431 0 2 0H34C35.1046 0 36 0.89543 36 2V33C36 34.1046 35.1046 35 34 35H2C0.895431 35 0 34.1046 0 33V2Z" fill="#F2F2F2"/>
+                    <path d="M25.75 18C25.75 13.7188 22.2812 10.25 18 10.25C13.7188 10.25 10.25 13.7188 10.25 18C10.25 21.3125 12.2812 24.0938 15.1562 25.2188C15.0938 24.625 15.0312 23.6875 15.1875 23C15.3438 22.4062 16.0938 19.1562 16.0938 19.1562C16.0938 19.1562 15.875 18.6875 15.875 18C15.875 16.9375 16.5 16.125 17.2812 16.125C17.9375 16.125 18.25 16.625 18.25 17.2188C18.25 17.875 17.8125 18.875 17.5938 19.8125C17.4375 20.5625 18 21.1875 18.75 21.1875C20.125 21.1875 21.1875 19.75 21.1875 17.6562C21.1875 15.7812 19.8438 14.5 17.9688 14.5C15.75 14.5 14.4688 16.1562 14.4688 17.8438C14.4688 18.5312 14.7188 19.25 15.0312 19.625C15.0938 19.6875 15.0938 19.7812 15.0938 19.8438C15.0312 20.0938 14.875 20.625 14.875 20.7188C14.8438 20.875 14.75 20.9062 14.5938 20.8438C13.625 20.375 13.0312 18.9688 13.0312 17.8125C13.0312 15.375 14.8125 13.125 18.1562 13.125C20.8438 13.125 22.9375 15.0625 22.9375 17.625C22.9375 20.2812 21.25 22.4375 18.9062 22.4375C18.125 22.4375 17.375 22.0312 17.125 21.5312C17.125 21.5312 16.75 23.0312 16.6562 23.375C16.4688 24.0625 16 24.9062 15.6875 25.4062C16.4062 25.6562 17.1875 25.75 18 25.75C22.2812 25.75 25.75 22.2812 25.75 18Z" fill="#4F4F4F"/>
+                    </svg>
+                    
+            </a>
+        </li>
+       
+    </ul>
+
+       <!-- social icon -->
+    </div>
+</div>
+<!-- overly eiffects -->
+                </div>
+
+                <div class="w-[312px] h-[310px] bg-white relative">
+                    <div>
+                        <img src="img/unsplash_v3OlBE6-fhU.png" alt="" class="h-[310px] w-full">
+                    </div>
+                    <div class="text-center h-[88px] shadow-[0px_0px_80px_rgba(205,205,205,0.25)]">
+                        <h2 class="pt-4 text-[20px] leading-7 font-bold">Tom Monrow</h2>
+                        <p>Specialist</p>
+                    </div>
+                    <!-- overly eiffects -->
+ <div class="absolute overflow-hidden top-0 left-0 right-0 h-[310px] bg-gradient-to-r from-[#8490ff] to-[#62bdfc] opacity-0 hover:opacity-90 transition duration-500 cursor-pointer text-center">
+    <div class="py-16">
+       <!-- social icon -->
+        
+       <ul class="text-white w-10 h-10 mx-auto pt-2 flex-wrap gap-3  items-center">
+        <li class="pb-3 hover:scale-110 transition ease-in-out duration-300">
+            <a href="#">
+            <svg width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 1.99994C0 0.895369 0.895431 -6.10352e-05 2 -6.10352e-05H34C35.1046 -6.10352e-05 36 0.89537 36 1.99994V32.9999C36 34.1045 35.1046 34.9999 34 34.9999H2C0.895431 34.9999 0 34.1045 0 32.9999V1.99994Z" fill="#F2F2F2"/>
+            <path d="M21.7188 18.9999L22.1562 16.1249H19.375V14.2499C19.375 13.4374 19.75 12.6874 21 12.6874H22.2812V10.2187C22.2812 10.2187 21.125 9.99994 20.0312 9.99994C17.75 9.99994 16.25 11.4062 16.25 13.9062V16.1249H13.6875V18.9999H16.25V25.9999H19.375V18.9999H21.7188Z" fill="#4F4F4F"/>
+            </svg>
+            </a>
+        </li>
+        <li class="pb-3 hover:scale-110 transition ease-in-out duration-300">
+            <a href="#">
+                <svg width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 2C0 0.89543 0.895431 0 2 0H34C35.1046 0 36 0.895431 36 2V33C36 34.1046 35.1046 35 34 35H2C0.895431 35 0 34.1046 0 33V2Z" fill="#F2F2F2"/>
+                    <path d="M25.3438 14.75C25.9688 14.2812 26.5312 13.7188 26.9688 13.0625C26.4062 13.3125 25.75 13.5 25.0938 13.5625C25.7812 13.1562 26.2812 12.5312 26.5312 11.75C25.9062 12.125 25.1875 12.4062 24.4688 12.5625C23.8438 11.9062 23 11.5312 22.0625 11.5312C20.25 11.5312 18.7812 13 18.7812 14.8125C18.7812 15.0625 18.8125 15.3125 18.875 15.5625C16.1562 15.4062 13.7188 14.0938 12.0938 12.125C11.8125 12.5938 11.6562 13.1562 11.6562 13.7812C11.6562 14.9062 12.2188 15.9062 13.125 16.5C12.5938 16.4688 12.0625 16.3438 11.625 16.0938V16.125C11.625 17.7188 12.75 19.0312 14.25 19.3438C14 19.4062 13.6875 19.4688 13.4062 19.4688C13.1875 19.4688 13 19.4375 12.7812 19.4062C13.1875 20.7188 14.4062 21.6562 15.8438 21.6875C14.7188 22.5625 13.3125 23.0938 11.7812 23.0938C11.5 23.0938 11.25 23.0625 11 23.0312C12.4375 23.9688 14.1562 24.5 16.0312 24.5C22.0625 24.5 25.3438 19.5312 25.3438 15.1875C25.3438 15.0312 25.3438 14.9062 25.3438 14.75Z" fill="#4F4F4F"/>
+                    </svg>
+                    
+            </a>
+        </li>
+        <li class="pb-3 hover:scale-110 transition ease-in-out duration-300">
+            <a href="#">
+                <svg width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 2C0 0.89543 0.895431 0 2 0H34C35.1046 0 36 0.89543 36 2V33C36 34.1046 35.1046 35 34 35H2C0.895431 35 0 34.1046 0 33V2Z" fill="#FF9F0D"/>
+                    <path d="M26.1562 12.9062C25.9688 12.1562 25.375 11.5625 24.6562 11.375C23.3125 11 18 11 18 11C18 11 12.6562 11 11.3125 11.375C10.5938 11.5625 10 12.1562 9.8125 12.9062C9.4375 14.2188 9.4375 17.0312 9.4375 17.0312C9.4375 17.0312 9.4375 19.8125 9.8125 21.1562C10 21.9062 10.5938 22.4688 11.3125 22.6562C12.6562 23 18 23 18 23C18 23 23.3125 23 24.6562 22.6562C25.375 22.4688 25.9688 21.9062 26.1562 21.1562C26.5312 19.8125 26.5312 17.0312 26.5312 17.0312C26.5312 17.0312 26.5312 14.2188 26.1562 12.9062ZM16.25 19.5625V14.5L20.6875 17.0312L16.25 19.5625Z" fill="#F2F2F2"/>
+                    </svg>
+                    
+            </a>
+        </li>
+        <li class="pb-3 hover:scale-110 transition ease-in-out duration-300">
+            <a href="#">
+                <svg width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 2C0 0.89543 0.895431 0 2 0H34C35.1046 0 36 0.89543 36 2V33C36 34.1046 35.1046 35 34 35H2C0.895431 35 0 34.1046 0 33V2Z" fill="#F2F2F2"/>
+                    <path d="M25.75 18C25.75 13.7188 22.2812 10.25 18 10.25C13.7188 10.25 10.25 13.7188 10.25 18C10.25 21.3125 12.2812 24.0938 15.1562 25.2188C15.0938 24.625 15.0312 23.6875 15.1875 23C15.3438 22.4062 16.0938 19.1562 16.0938 19.1562C16.0938 19.1562 15.875 18.6875 15.875 18C15.875 16.9375 16.5 16.125 17.2812 16.125C17.9375 16.125 18.25 16.625 18.25 17.2188C18.25 17.875 17.8125 18.875 17.5938 19.8125C17.4375 20.5625 18 21.1875 18.75 21.1875C20.125 21.1875 21.1875 19.75 21.1875 17.6562C21.1875 15.7812 19.8438 14.5 17.9688 14.5C15.75 14.5 14.4688 16.1562 14.4688 17.8438C14.4688 18.5312 14.7188 19.25 15.0312 19.625C15.0938 19.6875 15.0938 19.7812 15.0938 19.8438C15.0312 20.0938 14.875 20.625 14.875 20.7188C14.8438 20.875 14.75 20.9062 14.5938 20.8438C13.625 20.375 13.0312 18.9688 13.0312 17.8125C13.0312 15.375 14.8125 13.125 18.1562 13.125C20.8438 13.125 22.9375 15.0625 22.9375 17.625C22.9375 20.2812 21.25 22.4375 18.9062 22.4375C18.125 22.4375 17.375 22.0312 17.125 21.5312C17.125 21.5312 16.75 23.0312 16.6562 23.375C16.4688 24.0625 16 24.9062 15.6875 25.4062C16.4062 25.6562 17.1875 25.75 18 25.75C22.2812 25.75 25.75 22.2812 25.75 18Z" fill="#4F4F4F"/>
+                    </svg>
+                    
+            </a>
+        </li>
+       
+    </ul>
+
+       <!-- social icon -->
+    </div>
+</div>
+<!-- overly eiffects -->
+                </div>
+                <!-- team item -->
+            </div>
+            <!-- our team -->
+
+        </div>
+    </section>
+    <!-- team end -->
+
+    <!-- customer Review -->
+    <section class="mt-[120px] bg-gray-50">
+
+        <div class="container">
+            <div class="w-[1320px] flex gap-[120px]">
+                <!-- left -->
+                <div class="w-[536px]">
+
+                <div class="flex">
+                    <h4 class="font-miniver text-lg leading-[26px] text-[#195A00] ">Why Choose us</h4>
+                    <span class="bg-[#195A00] border w-[34px] h-0 border-[#195A00] ml-[10px] mt-[18px]"></span>
+                </div>
+
+                <h2 class="font-bold text-[48px] leading-[56px] pt-2 pb-2">Customer Review</h2>
+                <span>
+                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M25.3125 33.75H9.375C8.87772 33.75 8.40081 33.5525 8.04918 33.2008C7.69754 32.8492 7.5 32.3723 7.5 31.875V16.875C7.5 16.3777 7.69754 15.9008 8.04918 15.5492C8.40081 15.1975 8.87772 15 9.375 15H23.4375C23.9348 15 24.4117 15.1975 24.7633 15.5492C25.115 15.9008 25.3125 16.3777 25.3125 16.875V37.5C25.3125 39.9864 24.3248 42.371 22.5666 44.1291C20.8085 45.8873 18.4239 46.875 15.9375 46.875" stroke="#195A00" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M52.5 33.75H36.5625C36.0652 33.75 35.5883 33.5525 35.2367 33.2008C34.885 32.8492 34.6875 32.3723 34.6875 31.875V16.875C34.6875 16.3777 34.885 15.9008 35.2367 15.5492C35.5883 15.1975 36.0652 15 36.5625 15H50.625C51.1223 15 51.5992 15.1975 51.9508 15.5492C52.3025 15.9008 52.5 16.3777 52.5 16.875V37.5C52.5 39.9864 51.5123 42.371 49.7541 44.1291C47.996 45.8873 45.6114 46.875 43.125 46.875" stroke="#195A00" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        
+                </span>
+                <div>
+                    <p class="text-base text-[#828282] pb-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque diam pellentesque bibendum non dui volutpat fringilla bibendum. Urna, elit augue urna, vitae feugiat pretium donec id elementum. Ultrices mattis sed vitae mus risus. Lacus nisi, et ac dapibus sit eu velit in consequat.</p>
+                    <div class="flex justify-between items-center">
+                        <div class="flex gap-4">
+                            <div class="">
+                                <img src="img/Ellipse 2552.png" alt="">  
+                            </div>
+                            <div>
+                            <h4 class="font-bold text-[18px] leading-[26px] text-[#4F4F4F] pb-[7px]">Abdur Rahman</h4>
+                            <p class="text-base text-[#828282]">Customer</p>
+                            </div>
+                        </div>
+                        <div class="">
+                            <ul class="flex gap-2 items-center">
+                                <li>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20.25 12L3.75 12" stroke="#828282" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M10.5 18.75L3.75 12L10.5 5.25" stroke="#828282" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        
+                                      
+                                </li>
+                                <li>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.75 12H20.25" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        
+                                      
+                                      
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+                <!-- left -->
+                <!-- right -->
+                <div class=" ">
+                    <div class="w-[480px] ml-10">
+                        <img src="img/unsplash_oT7_v-I0hHg.png" alt="">
+                    </div>
+                    <div class="px-[30px] bg-white rounded-md shadow-[0px_4px_40px_rgba(0,0,0,0.1)] shadow-gray-400 w-[436px] h-[213px]  left-0 bottom-0 right-5 relative z-10 -mt-40 pt-[37px]">
+                        <div class="flex justify-between items-center pb-[10px]">
+                            <h2 class="text-[20px] leading-7 font-bold text-[#333333]">Order now</h2>
+                        <p class="text-[#4F4F4F] font-inter font-bold text-base">10.00$</p>
+                        </div>
+                        <ul class="flex pb-[19px]">
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.3437 14.8985L14.2812 17.3985C14.7891 17.7188 15.4141 17.2422 15.2656 16.6563L14.125 12.1719C14.0942 12.0476 14.0991 11.9171 14.1391 11.7955C14.1792 11.6738 14.2529 11.566 14.3516 11.4844L17.8828 8.53908C18.3437 8.15627 18.1094 7.38283 17.5078 7.34377L12.8984 7.04689C12.7727 7.03958 12.6518 6.99578 12.5505 6.92086C12.4492 6.84594 12.3719 6.74314 12.3281 6.62502L10.6094 2.29689C10.5639 2.17182 10.481 2.06377 10.372 1.98742C10.263 1.91107 10.1331 1.87012 10 1.87012C9.8669 1.87012 9.73703 1.91107 9.62802 1.98742C9.519 2.06377 9.43612 2.17182 9.39062 2.29689L7.67187 6.62502C7.62807 6.74314 7.5508 6.84594 7.44952 6.92086C7.34824 6.99578 7.22733 7.03958 7.10156 7.04689L2.49218 7.34377C1.89062 7.38283 1.65625 8.15627 2.11718 8.53908L5.64843 11.4844C5.74713 11.566 5.82077 11.6738 5.86085 11.7955C5.90094 11.9171 5.90584 12.0476 5.875 12.1719L4.82031 16.3281C4.64062 17.0313 5.39062 17.6016 5.99218 17.2188L9.65625 14.8985C9.75899 14.8331 9.87823 14.7984 10 14.7984C10.1218 14.7984 10.241 14.8331 10.3437 14.8985V14.8985Z" fill="#195A00"/>
+                                    </svg>
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.3437 14.8985L14.2812 17.3985C14.7891 17.7188 15.4141 17.2422 15.2656 16.6563L14.125 12.1719C14.0942 12.0476 14.0991 11.9171 14.1391 11.7955C14.1792 11.6738 14.2529 11.566 14.3516 11.4844L17.8828 8.53908C18.3437 8.15627 18.1094 7.38283 17.5078 7.34377L12.8984 7.04689C12.7727 7.03958 12.6518 6.99578 12.5505 6.92086C12.4492 6.84594 12.3719 6.74314 12.3281 6.62502L10.6094 2.29689C10.5639 2.17182 10.481 2.06377 10.372 1.98742C10.263 1.91107 10.1331 1.87012 10 1.87012C9.8669 1.87012 9.73703 1.91107 9.62802 1.98742C9.519 2.06377 9.43612 2.17182 9.39062 2.29689L7.67187 6.62502C7.62807 6.74314 7.5508 6.84594 7.44952 6.92086C7.34824 6.99578 7.22733 7.03958 7.10156 7.04689L2.49218 7.34377C1.89062 7.38283 1.65625 8.15627 2.11718 8.53908L5.64843 11.4844C5.74713 11.566 5.82077 11.6738 5.86085 11.7955C5.90094 11.9171 5.90584 12.0476 5.875 12.1719L4.82031 16.3281C4.64062 17.0313 5.39062 17.6016 5.99218 17.2188L9.65625 14.8985C9.75899 14.8331 9.87823 14.7984 10 14.7984C10.1218 14.7984 10.241 14.8331 10.3437 14.8985V14.8985Z" fill="#195A00"/>
+                                    </svg>
+                                    
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.3437 14.8985L14.2812 17.3985C14.7891 17.7188 15.4141 17.2422 15.2656 16.6563L14.125 12.1719C14.0942 12.0476 14.0991 11.9171 14.1391 11.7955C14.1792 11.6738 14.2529 11.566 14.3516 11.4844L17.8828 8.53908C18.3437 8.15627 18.1094 7.38283 17.5078 7.34377L12.8984 7.04689C12.7727 7.03958 12.6518 6.99578 12.5505 6.92086C12.4492 6.84594 12.3719 6.74314 12.3281 6.62502L10.6094 2.29689C10.5639 2.17182 10.481 2.06377 10.372 1.98742C10.263 1.91107 10.1331 1.87012 10 1.87012C9.8669 1.87012 9.73703 1.91107 9.62802 1.98742C9.519 2.06377 9.43612 2.17182 9.39062 2.29689L7.67187 6.62502C7.62807 6.74314 7.5508 6.84594 7.44952 6.92086C7.34824 6.99578 7.22733 7.03958 7.10156 7.04689L2.49218 7.34377C1.89062 7.38283 1.65625 8.15627 2.11718 8.53908L5.64843 11.4844C5.74713 11.566 5.82077 11.6738 5.86085 11.7955C5.90094 11.9171 5.90584 12.0476 5.875 12.1719L4.82031 16.3281C4.64062 17.0313 5.39062 17.6016 5.99218 17.2188L9.65625 14.8985C9.75899 14.8331 9.87823 14.7984 10 14.7984C10.1218 14.7984 10.241 14.8331 10.3437 14.8985V14.8985Z" fill="#195A00"/>
+                                    </svg>
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.3437 14.8985L14.2812 17.3985C14.7891 17.7188 15.4141 17.2422 15.2656 16.6563L14.125 12.1719C14.0942 12.0476 14.0991 11.9171 14.1391 11.7955C14.1792 11.6738 14.2529 11.566 14.3516 11.4844L17.8828 8.53908C18.3437 8.15627 18.1094 7.38283 17.5078 7.34377L12.8984 7.04689C12.7727 7.03958 12.6518 6.99578 12.5505 6.92086C12.4492 6.84594 12.3719 6.74314 12.3281 6.62502L10.6094 2.29689C10.5639 2.17182 10.481 2.06377 10.372 1.98742C10.263 1.91107 10.1331 1.87012 10 1.87012C9.8669 1.87012 9.73703 1.91107 9.62802 1.98742C9.519 2.06377 9.43612 2.17182 9.39062 2.29689L7.67187 6.62502C7.62807 6.74314 7.5508 6.84594 7.44952 6.92086C7.34824 6.99578 7.22733 7.03958 7.10156 7.04689L2.49218 7.34377C1.89062 7.38283 1.65625 8.15627 2.11718 8.53908L5.64843 11.4844C5.74713 11.566 5.82077 11.6738 5.86085 11.7955C5.90094 11.9171 5.90584 12.0476 5.875 12.1719L4.82031 16.3281C4.64062 17.0313 5.39062 17.6016 5.99218 17.2188L9.65625 14.8985C9.75899 14.8331 9.87823 14.7984 10 14.7984C10.1218 14.7984 10.241 14.8331 10.3437 14.8985V14.8985Z" fill="#195A00"/>
+                                    </svg>
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.3437 14.8985L14.2812 17.3985C14.7891 17.7188 15.4141 17.2422 15.2656 16.6563L14.125 12.1719C14.0942 12.0476 14.0991 11.9171 14.1391 11.7955C14.1792 11.6738 14.2529 11.566 14.3516 11.4844L17.8828 8.53908C18.3437 8.15627 18.1094 7.38283 17.5078 7.34377L12.8984 7.04689C12.7727 7.03958 12.6518 6.99578 12.5505 6.92086C12.4492 6.84594 12.3719 6.74314 12.3281 6.62502L10.6094 2.29689C10.5639 2.17182 10.481 2.06377 10.372 1.98742C10.263 1.91107 10.1331 1.87012 10 1.87012C9.8669 1.87012 9.73703 1.91107 9.62802 1.98742C9.519 2.06377 9.43612 2.17182 9.39062 2.29689L7.67187 6.62502C7.62807 6.74314 7.5508 6.84594 7.44952 6.92086C7.34824 6.99578 7.22733 7.03958 7.10156 7.04689L2.49218 7.34377C1.89062 7.38283 1.65625 8.15627 2.11718 8.53908L5.64843 11.4844C5.74713 11.566 5.82077 11.6738 5.86085 11.7955C5.90094 11.9171 5.90584 12.0476 5.875 12.1719L4.82031 16.3281C4.64062 17.0313 5.39062 17.6016 5.99218 17.2188L9.65625 14.8985C9.75899 14.8331 9.87823 14.7984 10 14.7984C10.1218 14.7984 10.241 14.8331 10.3437 14.8985V14.8985Z" fill="#195A00"/>
+                                    </svg>
+                            </li>
+                          </ul>
+                        <p>Lorem ipsum dolor sit amet, consectetur elit. Quisque diam pellentesque bibendum fringilla bibendum. Urna, elit augue urna,</p>
+                        
+                    </div>
+                </div>
+                <!-- right -->
             </div>
         </div>
     </section>
-    <!-- food menu end -->
+    <!-- customer Review end -->
 
     <!-- blog -->
     <section class="mt-[144px]">
@@ -472,6 +1007,51 @@
                         <img src="img/unsplash_WBMi3TLZdZc.png" alt="">
                     </div>
                     <div class="flex items-center gap-6">
+
+                        <div class="flex gap-3 items-center pt-6">
+                            <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.5 3.75H4.5C4.08579 3.75 3.75 4.08579 3.75 4.5V19.5C3.75 19.9142 4.08579 20.25 4.5 20.25H19.5C19.9142 20.25 20.25 19.9142 20.25 19.5V4.5C20.25 4.08579 19.9142 3.75 19.5 3.75Z" stroke="#195A00" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16.5 2.25V5.25" stroke="#195A00" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7.5 2.25V5.25" stroke="#195A00" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M3.75 8.25H20.25" stroke="#195A00" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8.625 11.9998H11.25L9.75 13.8748C9.99664 13.8748 10.2395 13.9356 10.457 14.0518C10.6745 14.1681 10.86 14.3362 10.9971 14.5412C11.1341 14.7463 11.2185 14.9819 11.2427 15.2274C11.267 15.4728 11.2303 15.7205 11.136 15.9484C11.0417 16.1763 10.8926 16.3774 10.702 16.5339C10.5114 16.6904 10.2852 16.7976 10.0433 16.8458C9.80143 16.894 9.55139 16.8819 9.31534 16.8104C9.07928 16.7389 8.86449 16.6104 8.68999 16.4361" stroke="#195A00" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M13.5 13.1248L15 11.9998V16.8748" stroke="#195A00" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                </span>
+                                <span>02 Jan 2022</span>
+                        </div>
+
+                        <div class="flex gap-3 items-center pt-6">
+                            <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.71096 13.5L3.00006 16.5V4.5C3.00006 4.30109 3.07908 4.11032 3.21973 3.96967C3.36038 3.82902 3.55115 3.75 3.75006 3.75H15.7501C15.949 3.75 16.1397 3.82902 16.2804 3.96967C16.421 4.11032 16.5001 4.30109 16.5001 4.5V12.75C16.5001 12.9489 16.421 13.1397 16.2804 13.2803C16.1397 13.421 15.949 13.5 15.7501 13.5H6.71096Z" stroke="#195A00" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7.50006 13.5V17.25C7.50006 17.4489 7.57908 17.6397 7.71973 17.7803C7.86038 17.921 8.05115 18 8.25006 18H17.2892L21.0001 21V9C21.0001 8.80109 20.921 8.61032 20.7804 8.46967C20.6397 8.32902 20.449 8.25 20.2501 8.25H16.5001" stroke="#195A00" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                
+                                </span>
+                                <span>Comments (03)</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="font-bold text-[20px] leading-[28px] pt-4 pb-2">Chocolate Truffle Cake With
+                            Honey Flavor</h2>
+                            <p class="text-base pb-4">Lorem ipsum dolor sit amet, consectetur elit. Non mi sed etiam a id at ultricies neque.Tempus,poten diam ac integer id tellus est.</p>
+                    </div>
+                    <button class="flex gap-2 py-2 border-b hover:border-blue-200 border-b-transparent transition duration-300 px-2 rounded-lg">
+                       <span class=""> Read more</span>
+                        <span>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.99109 10H16.1518" stroke="#4F4F4F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M10.7679 4.375L16.1518 10L10.7679 15.625" stroke="#4F4F4F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+
+                <div class="w-[424px] px-4">
+                    <div>
+                        <img src="img/unsplash_WBMi3TLZdZc.png" alt="">
+                    </div>
+                    <div class="flex items-center gap-6">
                         <div class="flex gap-3 items-center pt-6">
                             <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M19.5 3.75H4.5C4.08579 3.75 3.75 4.08579 3.75 4.5V19.5C3.75 19.9142 4.08579 20.25 4.5 20.25H19.5C19.9142 20.25 20.25 19.9142 20.25 19.5V4.5C20.25 4.08579 19.9142 3.75 19.5 3.75Z" stroke="#195A00" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -499,15 +1079,15 @@
                             Honey Flavor</h2>
                             <p class="text-base pb-4">Lorem ipsum dolor sit amet, consectetur elit. Non mi sed etiam a id at ultricies neque.Tempus,poten diam ac integer id tellus est.</p>
                     </div>
-                    <button class="flex gap-2">
-                        Read more
-                        <span>
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M2.99109 10H16.1518" stroke="#4F4F4F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M10.7679 4.375L16.1518 10L10.7679 15.625" stroke="#4F4F4F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </span>
-                    </button>
+                    <button class="flex gap-2 py-2 border-b hover:border-blue-200 border-b-transparent transition duration-300 px-2 rounded-lg">
+                        <span class=""> Read more</span>
+                         <span>
+                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                             <path d="M2.99109 10H16.1518" stroke="#4F4F4F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                             <path d="M10.7679 4.375L16.1518 10L10.7679 15.625" stroke="#4F4F4F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                             </svg>
+                         </span>
+                     </button>
                 </div>
                 <div class="w-[424px] px-4">
                     <div>
@@ -541,15 +1121,15 @@
                             Honey Flavor</h2>
                             <p class="text-base pb-4">Lorem ipsum dolor sit amet, consectetur elit. Non mi sed etiam a id at ultricies neque.Tempus,poten diam ac integer id tellus est.</p>
                     </div>
-                    <button class="flex gap-2">
-                        Read more
-                        <span>
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M2.99109 10H16.1518" stroke="#4F4F4F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M10.7679 4.375L16.1518 10L10.7679 15.625" stroke="#4F4F4F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </span>
-                    </button>
+                    <button class="flex gap-2 py-2 border-b hover:border-blue-200 border-b-transparent transition duration-300 px-2 rounded-lg">
+                        <span class=""> Read more</span>
+                         <span>
+                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                             <path d="M2.99109 10H16.1518" stroke="#4F4F4F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                             <path d="M10.7679 4.375L16.1518 10L10.7679 15.625" stroke="#4F4F4F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                             </svg>
+                         </span>
+                     </button>
                 </div>
                 <div class="w-[424px] px-4">
                     <div>
@@ -583,57 +1163,15 @@
                             Honey Flavor</h2>
                             <p class="text-base pb-4">Lorem ipsum dolor sit amet, consectetur elit. Non mi sed etiam a id at ultricies neque.Tempus,poten diam ac integer id tellus est.</p>
                     </div>
-                    <button class="flex gap-2">
-                        Read more
-                        <span>
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M2.99109 10H16.1518" stroke="#4F4F4F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M10.7679 4.375L16.1518 10L10.7679 15.625" stroke="#4F4F4F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </span>
-                    </button>
-                </div>
-                <div class="w-[424px] px-4">
-                    <div>
-                        <img src="img/unsplash_WBMi3TLZdZc.png" alt="">
-                    </div>
-                    <div class="flex items-center gap-6">
-                        <div class="flex gap-3 items-center pt-6">
-                            <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M19.5 3.75H4.5C4.08579 3.75 3.75 4.08579 3.75 4.5V19.5C3.75 19.9142 4.08579 20.25 4.5 20.25H19.5C19.9142 20.25 20.25 19.9142 20.25 19.5V4.5C20.25 4.08579 19.9142 3.75 19.5 3.75Z" stroke="#195A00" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M16.5 2.25V5.25" stroke="#195A00" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M7.5 2.25V5.25" stroke="#195A00" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M3.75 8.25H20.25" stroke="#195A00" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M8.625 11.9998H11.25L9.75 13.8748C9.99664 13.8748 10.2395 13.9356 10.457 14.0518C10.6745 14.1681 10.86 14.3362 10.9971 14.5412C11.1341 14.7463 11.2185 14.9819 11.2427 15.2274C11.267 15.4728 11.2303 15.7205 11.136 15.9484C11.0417 16.1763 10.8926 16.3774 10.702 16.5339C10.5114 16.6904 10.2852 16.7976 10.0433 16.8458C9.80143 16.894 9.55139 16.8819 9.31534 16.8104C9.07928 16.7389 8.86449 16.6104 8.68999 16.4361" stroke="#195A00" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M13.5 13.1248L15 11.9998V16.8748" stroke="#195A00" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                                </span>
-                                <span>02 Jan 2022</span>
-                        </div>
-                        <div class="flex gap-3 items-center pt-6">
-                            <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6.71096 13.5L3.00006 16.5V4.5C3.00006 4.30109 3.07908 4.11032 3.21973 3.96967C3.36038 3.82902 3.55115 3.75 3.75006 3.75H15.7501C15.949 3.75 16.1397 3.82902 16.2804 3.96967C16.421 4.11032 16.5001 4.30109 16.5001 4.5V12.75C16.5001 12.9489 16.421 13.1397 16.2804 13.2803C16.1397 13.421 15.949 13.5 15.7501 13.5H6.71096Z" stroke="#195A00" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M7.50006 13.5V17.25C7.50006 17.4489 7.57908 17.6397 7.71973 17.7803C7.86038 17.921 8.05115 18 8.25006 18H17.2892L21.0001 21V9C21.0001 8.80109 20.921 8.61032 20.7804 8.46967C20.6397 8.32902 20.449 8.25 20.2501 8.25H16.5001" stroke="#195A00" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                                
-                                </span>
-                                <span>Comments (03)</span>
-                        </div>
-                    </div>
-                    <div>
-                        <h2 class="font-bold text-[20px] leading-[28px] pt-4 pb-2">Chocolate Truffle Cake With
-                            Honey Flavor</h2>
-                            <p class="text-base pb-4">Lorem ipsum dolor sit amet, consectetur elit. Non mi sed etiam a id at ultricies neque.Tempus,poten diam ac integer id tellus est.</p>
-                    </div>
-                    <button class="flex gap-2">
-                        Read more
-                        <span>
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M2.99109 10H16.1518" stroke="#4F4F4F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M10.7679 4.375L16.1518 10L10.7679 15.625" stroke="#4F4F4F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </span>
-                    </button>
+                    <button class="flex gap-2 py-2 border-b hover:border-blue-200 border-b-transparent transition duration-300 px-2 rounded-lg">
+                        <span class=""> Read more</span>
+                         <span>
+                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                             <path d="M2.99109 10H16.1518" stroke="#4F4F4F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                             <path d="M10.7679 4.375L16.1518 10L10.7679 15.625" stroke="#4F4F4F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                             </svg>
+                         </span>
+                     </button>
                 </div>
                 <!-- blog item -->
             </div>
@@ -676,16 +1214,138 @@
     <!-- footer -->
     <footer class="bg-[#A8BCA1] mt-[108px]">
         <div class="container">
-            <div class="py-[120px]">
-
-                <div>
+            <div class="py-[120px] flex gap-[82px]">
+                <div class="w-[254px]">
                     <img src="img/logo.png" alt="">
-                    <p class="text-base pt-6 pb-6">Subscribe our newsletter and 
+                    <p class="text-lg pt-6 pb-6 font-inter">Subscribe our newsletter and 
                         get discount 25%off</p>
                         <form action="">
-                            <input type="text" placeholder="">
+                            
+                                
+                            <div class="flex relative">
+                                <input type="text" placeholder="Enter Your Email" class=" rounded-md py-[9px] pl-5 text-[14px] leading-5 focus:outline-none focus:ring focus:ring-green-600 transition duration-300 w-[242px] h-[40px]">
+                               
+                                    <button class="bg-[#195A00] rounded-[0px_6px_6px_0px] px-3 py-2 absolute left-[198px] top-0 h-10">
+                                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M16.4533 2.54719C16.3732 2.46743 16.2719 2.41221 16.1615 2.38802C16.0511 2.36383 15.936 2.37167 15.8299 2.41063L2.76736 7.16062C2.65471 7.20335 2.55772 7.27934 2.48928 7.3785C2.42084 7.47766 2.38419 7.5953 2.38419 7.71578C2.38419 7.83627 2.42084 7.9539 2.48928 8.05306C2.55772 8.15222 2.65471 8.22821 2.76736 8.27094L7.86768 10.3075L11.6321 6.53125L12.4692 7.36844L8.68705 11.1506L10.7296 16.2509C10.7736 16.3614 10.8497 16.4561 10.9482 16.5228C11.0466 16.5895 11.1628 16.6251 11.2817 16.625C11.4017 16.6225 11.5182 16.5838 11.6157 16.5138C11.7132 16.4439 11.7872 16.346 11.828 16.2331L16.578 3.17063C16.6184 3.06558 16.6282 2.95119 16.6061 2.84081C16.584 2.73043 16.531 2.6286 16.4533 2.54719Z" fill="white"/>
+                                            </svg>
+                                    </button>
+                                    
+                            </div>
                         </form>
+                        <!-- social icon -->
+                        <div class="flex items-center gap-4 pt-6">
+                           
+                            
+                            <span>
+                                <img src="img/social_icon/pn.png" alt="">
+                            </span>
+                            <span>
+                                <img src="img/social_icon/tw.png" alt="">
+                            </span>
+                            <span>
+                                <img src="img/social_icon/fb.png" alt="">
+                            </span>
+                            <span>
+                                <img src="img/social_icon/in.png" alt="">
+                            </span>
+                            <span>
+                                <img src="img/social_icon/yt.png" alt="">
+                            </span>
+
+                            
+                        </div>
+                        <!-- social icon -->
                 </div>
+                <!-- contact -->
+                <div>
+                    <h2 class="text-[20px] leading-7 font-bold pb-6">Contact us</h2>
+                    <div class="flex-wrap">
+
+                       <div class="flex gap-2 items-center pb-4">
+                        <span>
+                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 13.4517C13.6569 13.4517 15 12.1085 15 10.4517C15 8.79481 13.6569 7.45166 12 7.45166C10.3431 7.45166 9 8.79481 9 10.4517C9 12.1085 10.3431 13.4517 12 13.4517Z" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M19.5 10.4517C19.5 17.2017 12 22.4517 12 22.4517C12 22.4517 4.5 17.2017 4.5 10.4517C4.5 8.46254 5.29018 6.55488 6.6967 5.14836C8.10322 3.74184 10.0109 2.95166 12 2.95166C13.9891 2.95166 15.8968 3.74184 17.3033 5.14836C18.7098 6.55488 19.5 8.46254 19.5 10.4517V10.4517Z" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            </span>
+
+                            <span class="text-lg leading-[26px] text-[#333333]">Kolkata India , 3rd Floor, Office 45</span>
+                       </div>
+
+                       <div class="flex gap-2 items-center pb-4">
+                        <span>
+                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.66965 12.206C9.44762 13.7965 10.7369 15.0799 12.3309 15.8507C12.4475 15.9059 12.5765 15.9299 12.7052 15.9201C12.8339 15.9104 12.9579 15.8673 13.0648 15.7951L15.4119 14.23C15.5157 14.1608 15.6352 14.1186 15.7594 14.1072C15.8837 14.0958 16.0088 14.1155 16.1235 14.1647L20.5144 16.0465C20.6636 16.1099 20.7881 16.22 20.8693 16.3603C20.9504 16.5006 20.9838 16.6634 20.9643 16.8243C20.8255 17.9103 20.2956 18.9085 19.4739 19.632C18.6521 20.3554 17.5948 20.7546 16.5 20.7546C13.1185 20.7546 9.87548 19.4113 7.48439 17.0202C5.0933 14.6291 3.75 11.3861 3.75 8.00461C3.75006 6.90977 4.14918 5.85249 4.87264 5.03074C5.5961 4.20899 6.59428 3.67911 7.68028 3.54033C7.84117 3.52086 8.00403 3.5542 8.14432 3.63534C8.28461 3.71647 8.39473 3.841 8.4581 3.99016L10.3416 8.38496C10.3903 8.49864 10.4101 8.6226 10.3994 8.7458C10.3886 8.869 10.3475 8.98763 10.2798 9.09111L8.72011 11.4742C8.64912 11.5814 8.60716 11.7052 8.59831 11.8335C8.58947 11.9617 8.61405 12.0901 8.66965 12.206V12.206Z" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+
+                            </span>
+                            <span class="text-lg leading-[26px] text-[#333333]">00965 - 96659986</span>
+
+                       </div>
+                       <div class="flex gap-2 items-center pb-4">
+                        <span>
+                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 9.31885V19.0688C3 19.2678 3.07902 19.4585 3.21967 19.5992C3.36032 19.7398 3.55109 19.8188 3.75 19.8188H20.25C20.4489 19.8188 20.6397 19.7398 20.7803 19.5992C20.921 19.4585 21 19.2678 21 19.0688V9.31885L12 3.31885L3 9.31885Z" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21 9.31885L13.6364 14.5688H10.3636L3 9.31885" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                            <span class="text-lg leading-[26px] text-[#333333]">M.Alyaqout@4house.Co</span>
+                       </div>
+                       <div class="flex gap-2 items-center pb-4">
+                        <span>
+                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 21.0991C16.9706 21.0991 21 17.0697 21 12.0991C21 7.12856 16.9706 3.09912 12 3.09912C7.02944 3.09912 3 7.12856 3 12.0991C3 17.0697 7.02944 21.0991 12 21.0991Z" stroke="#333333" stroke-width="1.5" stroke-miterlimit="10"/>
+                            <path d="M12 6.84912V12.0991H17.25" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            </span>
+
+                            <span class="text-lg leading-[26px] text-[#333333]">Sun - Sat / 10:00 AM - 8:00 PM</span>
+                       </div>
+                       
+                    </div>
+                </div>
+                <!-- contact end -->
+
+                <!-- links -->
+                <div>
+                    <h2 class="text-[20px] leading-7 font-bold pb-6 capitalize">links</h2>
+                    <ul class="capitalize flex-wrap">
+                        <li class="pb-4 text-base"><a class="text-[#333333] hover:no-underline" href="#">about us</a></li>
+                        <li class="pb-4 text-base"><a class="text-[#333333] hover:no-underline" href="#">contact us</a></li>
+                        <li class="pb-4 text-base"><a class="text-[#333333] hover:no-underline" href="#">our menu</a></li>
+                        <li class="pb-4 text-base"><a class="text-[#333333] hover:no-underline" href="#">team</a></li>
+                        <li class="pb-4 text-base"><a class="text-[#333333] hover:no-underline" href="#">faq</a></li>
+                    </ul>
+                </div>
+                <!-- links -->
+                
+                <!-- footer img gallery -->
+                <div>
+                    <h2 class="text-[20px] leading-7 font-bold pb-6 capitalize">Instagram Gallery</h2>
+                    <div class="grid grid-cols-3 gap-1">
+                        <div>
+                            <img src="img/unsplash_PxJ9zkM2wdA.png" alt="">
+                        </div>
+                        <div>
+                            <img src="img/unsplash_idTwDKt2j2o.png" alt="">
+                        </div>
+                        <div>
+                            <img src="img/unsplash__79ZJS8pV70.png" alt="">
+                        </div>
+                        <div>
+                            <img src="img/unsplash_jeiqzOgwwKU.png" alt="">
+                        </div>
+                        <div>
+                            <img src="img/unsplash_W10_NCsLVyc.png" alt="">
+                        </div>
+                        <div>
+                            <img src="img/unsplash_74yRjQ-cvNI.png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+                <!-- footer img gallery -->
             </div>
         </div>
         <!-- copyright -->
@@ -718,6 +1378,10 @@
         <!-- copyright end -->
     </footer>
     <!-- footer end -->
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="/public/custom.js"></script>
 </body>
 
 </html>

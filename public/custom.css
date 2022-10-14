@@ -8,6 +8,52 @@ border-bottom: 2px solid red;
 }
 /* top menu */
 
-
+.tab2 h2:hover{
+color:red
+}
+.hasib{
+    color: red;
+    
+}
 
 /* Custom Css code End */
+
+
+.read-more:hover svg{
+    fill: aliceblue;
+}
+
+.slick-prev {
+    left: -45px;
+    background: tomato;
+    width: 120px;
+    height: 50px;
+    z-index: 9999;
+    overflow: hidden;
+}
+
+
+.slick-prev, .slick-next {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: #8f1919fc;
+    border: none;
+    outline: none;
+    background: #bd0d0dfa;
+}
+
+button, [type='button'], [type='reset'], [type='submit'] {
+    -webkit-appearance: button;
+    /* background-color: transparent; */
+    /* background-image: none; */
+}
