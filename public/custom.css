@@ -8,13 +8,13 @@ border-bottom: 2px solid red;
 }
 /* top menu */
 
-.tab2 h2:hover{
+/* .tab2 h2:hover{
 color:red
 }
 .hasib{
     color: red;
     
-}
+} */
 
 /* Custom Css code End */
 
@@ -56,15 +56,98 @@ color:red
 
 
 
-button.slick-prev.slick-arrow {
+/* button.slick-prev.slick-arrow {
     background: tomato !important;
-}
+} */
 
-.single-item button.slick-next.slick-arrow {
+/* .single-item button.slick-next.slick-arrow {
     background: tomato;
     padding: 8px;
     width: 50px;
     height: 35px;
     margin-right: 17px;
     border-radius: 5px;
+}
+
+#slick .arrow_next{
+background-color: blue;
+overflow: hidden;
+} */
+
+
+/* .slick-prev:before, .slick-next:before {
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+    opacity: .75;
+    color: #1f2221 !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+} */
+
+
+.slick-prev{
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 54px;
+    height: 35px;
+    padding: 10px;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: #195A00 !important;
+    border-radius: 4px;
+    z-index: 999;
+    opacity: 50%;
+}
+
+.slick-prev {
+    left: -62px;
+}
+.slick-prev:hover {
+    
+    background: #195A00 !important;
+    opacity: 100%;
+   
+}
+
+.slick-next {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 54px;
+    height: 35px;
+    padding: 10px;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: #fff !important;
+    border: none;
+    outline: none;
+    background: green !important;
+    opacity: 50%;
+    border-radius: 4px;
+    z-index: 999;
+    transition: all .5s;
+}
+
+.slick-next {
+    right: -45px;
+}
+
+.slick-next:hover {
+    
+    background: #195A00 !important;
+    opacity: 100%;
+   
 }

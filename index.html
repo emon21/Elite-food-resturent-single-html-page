@@ -25,6 +25,7 @@
     <!-- custom css link -->
 
     <link href="./public/style.css" rel="stylesheet">
+    <link href="./public/custom.css" rel="stylesheet">
 
 
     <!-- custom css link -->
@@ -33,7 +34,8 @@
 
 <body>
 
-    <header class="relative">
+<div class="relative overflow-hidden">
+    <header class="overflow-hidden">
 
         <div class="container">
 
@@ -52,7 +54,7 @@
                     <ul class="capitalize flex py-[11px] gap-8 font-inter text-base z-50 top-menu">
 
                         <li class="">
-                            <a class="hover:font-bold hover:no-underline hover:border-[#195A00] border-b-red-600 border-b border-b-transparent pb-1 transition duration-300 " href="#" class="">home</a>
+                            <a class="hover:font-bold hover:no-underline hover:border-[#195A00] border-b-red-600 border-b border-b-transparent pb-1 transition duration-300 text-base" href="#" class="">home</a>
                         </li>
 
                         <li>
@@ -132,20 +134,18 @@
             </div>
 
         </div>
-        <img src="img/Bg.png" alt="" class="absolute top-0 right-0">
+        
     </header>
 
-
-
-    <!-- hero aera -->
-    <section class="pb-[129px]">
+     <!-- hero aera -->
+     <section class="pb-[129px]">
         <div class="container ">
             <div class="flex items-center justify-between py-12 gap-[180px]">
                 <!-- left item -->
                 <div class="w-[521px]">
                     <h4 class="font-miniver text-lg text-[#195A00] leading-[26px] pb-2">Healthy & Testy Food</h4>
                     <div class="flex pb-8 relative">
-                        <h1 class="font-bold font-Helvetica text-[60px] leading-[68px] text-[#333333]">
+                        <h1 class="select-none font-bold font-Helvetica text-[60px] leading-[68px] text-[#333333]">
                             Enjoy Healthy Life & Testy Food.</h1>
                         <span class="absolute left-[399px] top-[70px]">
                             <svg width="83" height="83" viewBox="0 0 83 83" fill="none"
@@ -182,23 +182,32 @@
 
                 <!-- right item -->
                 <div class="w-[712px]">
-                    <img src="img/Group 1000002254.png" alt="" class="z-50 relative">
+                    <img src="img/Group 1000002254.png" alt="" class="pointer-events-none z-50 relative">
 
                 </div>
                 <!-- right item -->
             </div>
 
-            <div class="grid grid-cols-1  gap-4 relative ">
-                <a href="#" class="text-center">Scrolldowan</a>
-                <span class="border-l-2 pl-2 h-10 mx-auto"></span>
+            <div class="text-center mb-5">
+                <a href="#about" class="cursor-pointer relative z-40 transition duration-300">Scrolldowan</a>
+                
+            </div>
+            <div class="text-center mx-auto">
+                <span>
+                    <svg width="1" height="60" class="mx-auto animate-bounce" viewBox="0 0 1 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="0.5" y1="0.000488281" x2="0.5" y2="60.0005" stroke="#828282"/>
+                        </svg>
+                        
+                </span>
             </div>
         </div>
     </section>
     <!-- hero aera end -->
-
-
+    <img src="img/Bg.png" alt="" class="pointer-events-none absolute top-0 xl:left-[823px] right-auto  z-40 bottom-0">
+</div>
+   
     <!-- about section -->
-    <section class="bg-white">
+    <section class="bg-white transition-all duration-500" id="about">
 
         <div class="container">
             <div class="flex justify-between items-center gap-[125px]">
@@ -256,6 +265,7 @@
         </div>
     </section>
     <!-- about section end -->
+
     <!-- food category start -->
     <section class="pt-[160px]">
         <div class="container">
@@ -334,6 +344,10 @@
                 </div>
 
                 <!-- food item ends -->
+
+                <!-- <div class="arrow_next relative z-50">
+                    <span>Next</span>
+                </div> -->
             </div>
             <!-- food category end -->
         </div>
@@ -501,15 +515,24 @@
                     </div>
                 
             <div class="">
-                <ul class="flex w-[622px] mx-auto">
-                    <li class="py-4 pl-[46px]"><a class="hover:text-[#195A00] hover:no-underline hover:font-bold transition duration-300" href="">Breakfast</a></li>
-                    <li class="py-4 pl-[46px]"><a class="hover:text-[#195A00] hover:no-underline hover:font-bold transition duration-300" href="">Lunch</a></li>
-                    <li class="py-4 pl-[46px]"><a class="hover:text-[#195A00] hover:no-underline hover:font-bold transition duration-300" href="">Dinner</a></li>
-                    <li class="py-4 pl-[46px]"><a class="hover:text-[#195A00] hover:no-underline hover:font-bold transition duration-300" href="">Dessert</a></li>
-                    <li class="py-4 pl-[46px]"><a class="hover:text-[#195A00] hover:no-underline hover:font-bold transition duration-300" href="">Drink</a></li>
-                    <li class="py-4 pl-[46px]"><a class="hover:text-[#195A00] hover:no-underline hover:font-bold transition duration-300" href="">Snack</a></li>
-                </ul>
-                <hr>
+                <div class="relative">
+                    <ul class="flex justify-center mx-auto ">
+
+                        <li class="py-4 pl-[46px]">
+                            <a class="hover:text-[#195A00] hover:no-underline transition duration-300 border-transparent border-b-2 hover:border-[#195A00] pb-[18px]" href="">Breakfast</a>
+                        </li>
+
+                        <li class="py-4 pl-[46px]">
+                            <a class="hover:text-[#195A00] hover:no-underline transition duration-300 border-transparent border-b-2 hover:border-[#195A00] pb-[18px]" href="">Lunch</a></li>
+                        <li class="py-4 pl-[46px]"><a class="hover:text-[#195A00] hover:no-underline transition duration-300 border-transparent border-b-2 hover:border-[#195A00] pb-[18px]" href="">Dinner</a></li>
+                        <li class="py-4 pl-[46px]"><a class="hover:text-[#195A00] hover:no-underline transition duration-300 border-transparent border-b-2 hover:border-[#195A00] pb-[18px]" href="">Dessert</a></li>
+                        <li class="py-4 pl-[46px]"><a class="hover:text-[#195A00] hover:no-underline transition duration-300 border-transparent border-b-2 hover:border-[#195A00] pb-[18px]" href="">Drink</a></li>
+                        <li class="py-4 pl-[46px]"><a class="hover:text-[#195A00] hover:no-underline transition duration-300 border-transparent border-b-2 hover:border-[#195A00] pb-[18px]" href="">Snack</a></li>
+                    </ul>
+                    <!-- <hr class="h-1"> -->
+                    <div class="bg-[#E0E0E0] h-[1px]"></div>
+                </div>
+                
 
                 <div class="flex justify-between pt-[56px] text-start">
                     <!-- left -->
@@ -620,16 +643,6 @@
         
     </section>
     <!-- food menu end -->
-
-<!-- khalil -->
-<div class="bg-green-500 text-center p-24">
-   <div class="text-lg"> Team Member</div>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius sed pharetra dictum neque massa congue
-</div>
-<div>
-    <div class="card"></div>
-</div>
-<!-- khalil end -->
 
     <!-- team -->
     <section class="bg-[#195A00] mt-[199px]">
@@ -1036,9 +1049,9 @@
                             Honey Flavor</h2>
                             <p class="text-base pb-4">Lorem ipsum dolor sit amet, consectetur elit. Non mi sed etiam a id at ultricies neque.Tempus,poten diam ac integer id tellus est.</p>
                     </div>
-                    <button class="flex gap-2 py-2 border-b hover:border-blue-200 border-b-transparent transition duration-300 px-2 rounded-lg">
-                       <span class=""> Read more</span>
-                        <span>
+                    <button class="flex gap-2 items-center border-b hover:border-[#195A00]  border-b-transparent transition duration-300 px-2 py-2 rounded-md">
+                       <span class="">Read more</span>
+                        <span class="pt-1">
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M2.99109 10H16.1518" stroke="#4F4F4F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M10.7679 4.375L16.1518 10L10.7679 15.625" stroke="#4F4F4F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -1046,7 +1059,6 @@
                         </span>
                     </button>
                 </div>
-
                 <div class="w-[424px] px-4">
                     <div>
                         <img src="img/unsplash_WBMi3TLZdZc.png" alt="">
@@ -1079,9 +1091,9 @@
                             Honey Flavor</h2>
                             <p class="text-base pb-4">Lorem ipsum dolor sit amet, consectetur elit. Non mi sed etiam a id at ultricies neque.Tempus,poten diam ac integer id tellus est.</p>
                     </div>
-                    <button class="flex gap-2 py-2 border-b hover:border-blue-200 border-b-transparent transition duration-300 px-2 rounded-lg">
-                        <span class=""> Read more</span>
-                         <span>
+                    <button class="flex gap-2 items-center border-b hover:border-[#195A00]  border-b-transparent transition duration-300 px-2 py-2 rounded-md">
+                        <span class="">Read more</span>
+                         <span class="pt-1">
                              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                              <path d="M2.99109 10H16.1518" stroke="#4F4F4F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                              <path d="M10.7679 4.375L16.1518 10L10.7679 15.625" stroke="#4F4F4F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -1121,9 +1133,9 @@
                             Honey Flavor</h2>
                             <p class="text-base pb-4">Lorem ipsum dolor sit amet, consectetur elit. Non mi sed etiam a id at ultricies neque.Tempus,poten diam ac integer id tellus est.</p>
                     </div>
-                    <button class="flex gap-2 py-2 border-b hover:border-blue-200 border-b-transparent transition duration-300 px-2 rounded-lg">
-                        <span class=""> Read more</span>
-                         <span>
+                    <button class="flex gap-2 items-center border-b hover:border-[#195A00]  border-b-transparent transition duration-300 px-2 py-2 rounded-md">
+                        <span class="">Read more</span>
+                         <span class="pt-1">
                              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                              <path d="M2.99109 10H16.1518" stroke="#4F4F4F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                              <path d="M10.7679 4.375L16.1518 10L10.7679 15.625" stroke="#4F4F4F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -1163,9 +1175,9 @@
                             Honey Flavor</h2>
                             <p class="text-base pb-4">Lorem ipsum dolor sit amet, consectetur elit. Non mi sed etiam a id at ultricies neque.Tempus,poten diam ac integer id tellus est.</p>
                     </div>
-                    <button class="flex gap-2 py-2 border-b hover:border-blue-200 border-b-transparent transition duration-300 px-2 rounded-lg">
-                        <span class=""> Read more</span>
-                         <span>
+                    <button class="flex gap-2 items-center border-b hover:border-[#195A00]  border-b-transparent transition duration-300 px-2 py-2 rounded-md">
+                        <span class="">Read more</span>
+                         <span class="pt-1">
                              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                              <path d="M2.99109 10H16.1518" stroke="#4F4F4F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                              <path d="M10.7679 4.375L16.1518 10L10.7679 15.625" stroke="#4F4F4F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
