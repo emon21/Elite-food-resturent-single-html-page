@@ -151,3 +151,70 @@ overflow: hidden;
     opacity: 100%;
    
 }
+
+
+/* customer Review */
+
+
+/* Pre*/
+
+.customer-review .slick-prev {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 54px;
+    height: 35px;
+    padding: 10px;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    /* color: #fff !important; */
+    border: none;
+    outline: none;
+    background: rgb(110, 109, 108) !important;
+    opacity: 50%;
+    border-radius: 4px;
+    z-index: 999;
+    transition: all .5s;
+}
+   
+
+/* Next*/
+
+.customer-review .slick-next {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 54px;
+    height: 35px;
+    padding: 10px;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    /* color: #fff !important; */
+    border: none;
+    outline: none;
+    background: rgb(110, 109, 108) !important;
+    opacity: 50%;
+    border-radius: 4px;
+    z-index: 999;
+    transition: all .5s;
+}
+/* customer Review End */
+
+.customer-review .slick-next {
+    right: -45px;
+    top: 221px;
+}
+.customer-review .slick-prev {
+    left: 0;
+    margin-left: 470px;
+    margin-top: 84px;
+    z-index: 99999;
+}
