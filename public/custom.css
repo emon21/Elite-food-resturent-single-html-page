@@ -1,12 +1,73 @@
 /* Custom Css code Start */
 
+/* preloader */
+
+.preloader {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fff;
+    position: fixed;
+    z-index: 99999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    width: 100%;
+    max-width: 500px;
+    ;
+}
+
+/* preloader */
+
+
+.top-menu.scroll-header {
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    color: rgb(51, 51, 51);
+    box-shadow: rgba(30, 30, 30, 0.3) -21.213px 21.213px 30px 0px;
+    z-index: 99999;
+    background-color: rgb(255, 255, 255);
+    min-height: 96px;
+    transition: all 0.5s ease 0s;
+}
+
+
 /* top menu */
 
-.top-menu ul li::after{
-content: '';
-border-bottom: 2px solid red;
-}
+
+/* .work svg path {
+    stroke: rgb(24, 14, 14);
+} */
+
+.scroll-header .right-menu svg path{
+    stroke: rgb(24, 14, 14) !important;
+    
+} 
 /* top menu */
+
+.tab-menu:hover {
+    text-shadow: 1px 0px 0px #333333;
+}
+.tab-menu::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    /* background: blue; */
+    transition: width .3s;
+    /* margin-top: 5px; */
+    border-bottom: 2px solid #195A00;
+}
+
+.tab-menu:hover::after {
+    width: 50%;
+
+}
+
 
 /* .tab2 h2:hover{
 color:red
@@ -93,8 +154,8 @@ overflow: hidden;
     top: 50%;
     display: block;
     width: 54px;
-    height: 35px;
-    padding: 10px;
+    height: 54px;
+    padding: 19px 15px;
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
     transform: translate(0, -50%);
@@ -125,8 +186,8 @@ overflow: hidden;
     top: 50%;
     display: block;
     width: 54px;
-    height: 35px;
-    padding: 10px;
+    height: 54px;
+    padding: 19px 15px;
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
     transform: translate(0, -50%);
@@ -209,12 +270,18 @@ overflow: hidden;
 /* customer Review End */
 
 .customer-review .slick-next {
-    right: -45px;
-    top: 221px;
+    left: 0px;
+    margin-left: 534px;
+    margin-top: 120px;
 }
 .customer-review .slick-prev {
-    left: 0;
+    left: 0px;
     margin-left: 470px;
-    margin-top: 84px;
-    z-index: 99999;
+    margin-top: 120px;
+    /* z-index: 99999; */
+}
+
+
+.blog-item h2{
+    color: blue;
 }

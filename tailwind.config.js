@@ -4,11 +4,12 @@ module.exports = {
     theme: {
         extend: {
             fontFamily:{
-                
-
                 'inter':['Inter', 'sans-serif'],
-                'miniver':['Miniver', 'cursive']
+                'miniver':['Miniver', 'cursive'],
+                'Helvetica':['Helvetica'],
             },
+
+            
             container:{
                 center:true,
                 padding:'0px',
