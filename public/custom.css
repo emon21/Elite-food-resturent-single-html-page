@@ -272,16 +272,25 @@ overflow: hidden;
 .customer-review .slick-next {
     left: 0px;
     margin-left: 534px;
-    margin-top: 120px;
+    margin-top: 50px;
 }
 .customer-review .slick-prev {
     left: 0px;
     margin-left: 470px;
-    margin-top: 120px;
+    margin-top: 50px;
     /* z-index: 99999; */
 }
 
 
 .blog-item h2{
     color: blue;
+}
+
+.custom-bg{
+   /* background: rgba(25, 90, 0, 0.85),url('../img/unsplash_OzBLe_Eg1mg.png'); */
+   background: linear-gradient(rgba(25, 90, 0, 0.85),rgba(25, 90, 0, 0.85)),url('../img/unsplash_OzBLe_Eg1mg.png');
+   background-position: center center;
+   background-size: cover;
+   background-repeat: no-repeat;
+
 }
