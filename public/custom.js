@@ -9,35 +9,35 @@
     autoplaySpeed: 2000,
     dots: false,
     arrows: true,
-    // responsive: [
-    //     {
-    //       breakpoint: 1920,
-    //       settings: {
-    //         slidesToShow: 3,
-    //         slidesToScroll: 1,
-    //         infinite: true,
-    //         dots: true
-    //       }
-    //     },
-    //     {
-    //       breakpoint: 991,
-    //       settings: {
-    //         slidesToShow: 2,
-    //         slidesToScroll: 1
-    //       }
-    //     },
-    //     {
-    //       breakpoint: 480,
-    //       settings: {
-    //         slidesToShow: 1,
-    //         slidesToScroll: 1,
+    responsive: [
+        {
+          breakpoint: 1920,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
            
-    //       }
-    //     }
-    //     // You can unslick at a given breakpoint now by adding:
-    //     // settings: "unslick"
-    //     // instead of a settings object
-    //   ]
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ],
     // nextArrow: '.arrow_next'
     
   });
@@ -106,30 +106,40 @@ $(window).on("scroll", function () {
 // create an array of objects with the id, trigger element (eg. button), and the content element
 const tabElements = [
     {
-        id: 'profile',
-        triggerEl: document.querySelector('#profile-tab-example'),
-        targetEl: document.querySelector('#profile-example')
+        id: 'breakfast',
+        triggerEl: document.querySelector('#breakfast-tab'),
+        targetEl: document.querySelector('#breakfast')
     },
     {
-        id: 'dashboard',
-        triggerEl: document.querySelector('#dashboard-tab-example'),
-        targetEl: document.querySelector('#dashboard-example')
+        id: 'lunch',
+        triggerEl: document.querySelector('#lunch-tab'),
+        targetEl: document.querySelector('#lunch')
     },
     {
-        id: 'settings',
-        triggerEl: document.querySelector('#settings-tab-example'),
-        targetEl: document.querySelector('#settings-example')
+        id: 'dinner',
+        triggerEl: document.querySelector('#dinner-tab'),
+        targetEl: document.querySelector('#dinner')
     },
     {
-        id: 'contacts',
-        triggerEl: document.querySelector('#contacts-tab-example'),
-        targetEl: document.querySelector('#contacts-example')
+        id: 'dessert',
+        triggerEl: document.querySelector('#dessert-tab'),
+        targetEl: document.querySelector('#dessert')
+    },
+    {
+        id: 'drink',
+        triggerEl: document.querySelector('#drink-tab'),
+        targetEl: document.querySelector('#drink')
+    },
+    {
+        id: 'snack',
+        triggerEl: document.querySelector('#snack-tab'),
+        targetEl: document.querySelector('#snack')
     }
 ];
 
 // options with default values
 const options = {
-    defaultTabId: 'profile',
+    defaultTabId: 'breakfast',
     activeClasses: 'text-green-600 hover:text-green-600 dark:hover:text-blue-400 border-green-600',
     inactiveClasses: 'text-gray-500 hover:text-gray-600 dark:text-gray-400 border-gray-100 hover:border-gray-300 dark:border-gray-700 dark:hover:text-gray-300',
     onShow: () => {
@@ -138,3 +148,17 @@ const options = {
 };
 
 const tabs = new Tabs(tabElements, options);
+
+
+//menu smooth scroll
+
+// $('.nav-menu a').click(function(e){
+
+//     e.preventDefault();
+//      var hash = this.hash;
+//      var position = $(hash).offset().top;
+//    // alert(position);
+//      $('html').animate({
+//          scrollTop:position
+//      },800);
+//  });

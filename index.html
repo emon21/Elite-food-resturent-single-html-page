@@ -82,6 +82,7 @@
                             <a href="index.html" class="brand-logo">
                                 <img src="img/logo.png">
                             </a>
+
                             <span class="cursor-pointer md:hidden mx-2 block text-gray-800">
                                 <ion-icon name="menu" onclick="Menu(this)" style="height: 50px;
                             width: 50px;"></ion-icon>
@@ -290,11 +291,10 @@
         <!-- hero aera end -->
 
         <img src="img/Bg.png" alt=""
-            class="pointer-events-none absolute -top-[442px] left-[853px] right-0 bottom-0 hidden">
+            class="pointer-events-none absolute -top-[442px] left-[853px] right-0 bottom-0">
     </div>
 
     <!-- header end -->
-
 
     <!-- about section -->
     <section class="bg-white transition-all duration-500" id="about">
@@ -355,7 +355,6 @@
         </div>
     </section>
     <!-- about section end -->
-
 
     <!-- food category start -->
     <section class="pt-[160px]">
@@ -484,10 +483,9 @@
                     <P class="text-base text-[#828282] pb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Varius sed pharetra dictum neque massa congue</P>
                     <!-- box -->
-                    <div class="grid grid-cols-2 items-center gap-6">
+                    <div class="grid grid-cols-1 xl:grid-cols-2 items-center gap-6 w-full">
                         <!-- box item -->
-                        <div
-                            class="flex items-center rounded-md bg-white gap-5 border-l-4 border-transparent shadow-[0px_0px_80px_rgba(205,205,205,0.25);]  hover:border-[#195A00] py-3 px-3 transition ease-in-out duration-300 w-[260px]">
+                        <div class="flex items-center rounded-md bg-white gap-5 border-l-4 border-transparent shadow-[0px_0px_80px_rgba(205,205,205,0.25);]  hover:border-[#195A00] py-3 px-3 transition ease-in-out duration-300 w-[260px]">
                             <span>
                                 <svg width="56" height="55" viewBox="0 0 56 55" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -613,31 +611,133 @@
 
                 <div class="mb-4 border-b border-gray-200 dark:border-gray-700">
                     <ul class="flex-row xl:flex xl:justify-center justify-start mx-auto" id="tabExample" role="tablist">
+
                         <li class="mr-2 font-inter text-[20px] leading-7" role="presentation">
-                            <button class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="profile-tab-example" type="button" role="tab" aria-controls="profile-example" aria-selected="false">Breakfast</button>
+                            <button class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="breakfast-tab" type="button" role="tab" aria-controls="breakfast" aria-selected="false">Breakfast</button>
                         </li>
+
                         <li class="mr-2 font-inter text-[20px] leading-7" role="presentation">
-                            <button class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="dashboard-tab-example" type="button" role="tab" aria-controls="dashboard-example" aria-selected="false">Lunch</button>
+                            <button class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="lunch-tab" type="button" role="tab" aria-controls="lunch" aria-selected="false">Lunch</button>
                         </li>
+
                         <li class="mr-2 font-inter text-[20px] leading-7" role="presentation">
-                            <button class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="settings-tab-example" type="button" role="tab" aria-controls="settings-example" aria-selected="false">Dinner</button>
+                            <button class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="dinner-tab" type="button" role="tab" aria-controls="dinner" aria-selected="false">Dinner</button>
                         </li>
+
                         <li class="mr-2 font-inter text-[20px] leading-7" role="presentation">
-                            <button class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="contacts-tab-example" type="button" role="tab" aria-controls="contacts-example" aria-selected="false">Dessert</button>
+                            <button class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="dessert-tab" type="button" role="tab" aria-controls="dessert" aria-selected="false">Dessert</button>
                         </li>
+
                         <li class="mr-2 font-inter text-[20px] leading-7" role="presentation">
-                            <button class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="contacts-tab-example" type="button" role="tab" aria-controls="contacts-example" aria-selected="false">Drink</button>
+                            <button class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="drink-tab" type="button" role="tab" aria-controls="drink" aria-selected="false">Drink</button>
                         </li>
+
                         <li class="mr-2 font-inter text-[20px] leading-7" role="presentation">
-                            <button class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="contacts-tab-example" type="button" role="tab" aria-controls="contacts-example" aria-selected="false">Snack</button>
+                            <button class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="snack-tab" type="button" role="tab" aria-controls="snack" aria-selected="false">Snack</button>
                         </li>
+
                     </ul>
                 </div>
 
                 <div id="tabContentExample">
 
                
-                    <div class="hidden rounded-lg dark:bg-gray-800" id="profile-example" role="tabpanel" aria-labelledby="profile-tab-example">
+                    <div class="hidden rounded-lg dark:bg-gray-800" id="breakfast" role="tabpanel" aria-labelledby="breakfast-tab">
+                        
+                        <div class="xl:flex flex-wrap justify-between gap-6 pt-[56px] text-start">
+                            <!-- left -->
+                            <div class="">
+                                <div class="xl:flex flex-wrap justify-between  mb-4 w-[648px] gap-6 border-b  pb-4 hover:text-green-700">
+                                    <div class="">
+                                        <h2 class="font-bold text-2xl  hasib pb-[7px]">Alder Grilled Chinook Salmon</h2>
+                                        <p class="text-[#4F4F4F] text-base pb-2">Toasted French bread topped with
+                                            romano,
+                                            cheddar</p>
+                                        <span class="text-[#828282] text-base">560 CAL</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-[#195A00] font-bold text-[24px] leading-8 bottom-0">32$</span>
+                                    </div>
+                                </div>
+                
+                                <div class="xl:flex flex-wrap justify-between  mb-4 w-[648px] gap-6 border-b  pb-4 hover:text-green-700">
+                                    <div class="">
+                                        <h2 class="font-bold text-2xl  hasib pb-[7px]">Alder Grilled Chinook Salmon</h2>
+                                        <p class="text-[#4F4F4F] text-base pb-2">Toasted French bread topped with
+                                            romano,
+                                            cheddar</p>
+                                        <span class="text-[#828282] text-base">560 CAL</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-[#195A00] font-bold text-[24px] leading-8 bottom-0">32$</span>
+                                    </div>
+                                </div>
+                
+                                <div class="xl:flex flex-wrap justify-between  mb-4 w-[648px] gap-6 border-b  pb-4 hover:text-green-700">
+                                    <div class="">
+                                        <h2 class="font-bold text-2xl  hasib pb-[7px]">Alder Grilled Chinook Salmon</h2>
+                                        <p class="text-[#4F4F4F] text-base pb-2">Toasted French bread topped with
+                                            romano,
+                                            cheddar</p>
+                                        <span class="text-[#828282] text-base">560 CAL</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-[#195A00] font-bold text-[24px] leading-8 bottom-0">32$</span>
+                                    </div>
+                                </div>
+                
+                            </div>
+                            <!-- left -->
+                            <!-- right -->
+                            <div class="">
+                                <div class="xl:flex flex-wrap justify-between  mb-4 w-[648px] gap-6 border-b  pb-4 hover:text-green-700">
+                                    <div class="">
+                                        <h2 class="font-bold text-2xl  hasib pb-[7px]">Alder Grilled Chinook Salmon</h2>
+                                        <p class="text-[#4F4F4F] text-base pb-2">Toasted French bread topped with
+                                            romano,
+                                            cheddar</p>
+                                        <span class="text-[#828282] text-base">560 CAL</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-[#195A00] font-bold text-[24px] leading-8 bottom-0">32$</span>
+                                    </div>
+                                </div>
+                
+                                <div class="xl:flex flex-wrap justify-between  mb-4 w-[648px] gap-6 border-b  pb-4 hover:text-green-700">
+                                    <div class="">
+                                        <h2 class="font-bold text-2xl  hasib pb-[7px]">Alder Grilled Chinook Salmon</h2>
+                                        <p class="text-[#4F4F4F] text-base pb-2">Toasted French bread topped with
+                                            romano,
+                                            cheddar</p>
+                                        <span class="text-[#828282] text-base">560 CAL</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-[#195A00] font-bold text-[24px] leading-8 bottom-0">32$</span>
+                                    </div>
+                                </div>
+                
+                                <div class="xl:flex flex-wrap justify-between  mb-4 w-[648px] gap-6 border-b  pb-4 hover:text-green-700">
+                                    <div class="">
+                                        <h2 class="font-bold text-2xl  hasib pb-[7px]">Alder Grilled Chinook Salmon</h2>
+                                        <p class="text-[#4F4F4F] text-base pb-2">Toasted French bread topped with
+                                            romano,
+                                            cheddar</p>
+                                        <span class="text-[#828282] text-base">560 CAL</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-[#195A00] font-bold text-[24px] leading-8 bottom-0">32$</span>
+                                    </div>
+                                </div>
+                
+                            </div>
+                            <!-- right -->
+                
+                        </div>
+
+                    </div>
+
+                    <div class="hidden rounded-lg dark:bg-gray-800" id="lunch" role="tabpanel" aria-labelledby="lunch-tab">
+                        
                         <div class="flex justify-between gap-6 pt-[56px] text-start">
                             <!-- left -->
                             <div class="">
@@ -759,25 +859,460 @@
                             <!-- right -->
                 
                         </div>
+                   
                     </div>
 
-                    <div class="hidden p-4 bg-gray-50 rounded-lg dark:bg-gray-800" id="dashboard-example" role="tabpanel" aria-labelledby="dashboard-tab-example">
-                        <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Dashboard tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+                    <div class="hidden rounded-lg dark:bg-gray-800" id="dinner" role="tabpanel" aria-labelledby="dinner-tab">
+                        
+                        <div class="flex justify-between gap-6 pt-[56px] text-start">
+                            <!-- left -->
+                            <div class="">
+                                <div
+                                    class="xl:flex flex justify-between  mb-4 w-[648px] gap-6 border-b  pb-4 hover:text-green-700">
+                                    <div class="">
+                                        <h2 class="font-bold text-2xl  hasib pb-[7px]">Alder Grilled Chinook Salmon</h2>
+                                        <p class="text-[#4F4F4F] text-base pb-2">Toasted French bread topped with
+                                            romano,
+                                            cheddar</p>
+                                        <span class="text-[#828282] text-base">560 CAL</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-[#195A00] font-bold text-[24px] leading-8 bottom-0">32$</span>
+                                    </div>
+                                </div>
+                
+                                <div
+                                    class="xl:flex flex justify-between  mb-4 w-[648px] gap-6 border-b  pb-4 hover:text-green-700">
+                                    <div class="">
+                                        <h2 class="font-bold text-2xl  hasib pb-[7px]">Alder Grilled Chinook Salmon</h2>
+                                        <p class="text-[#4F4F4F] text-base pb-2">Toasted French bread topped with
+                                            romano,
+                                            cheddar</p>
+                                        <span class="text-[#828282] text-base">560 CAL</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-[#195A00] font-bold text-[24px] leading-8 bottom-0">32$</span>
+                                    </div>
+                                </div>
+                
+                                <div
+                                    class="xl:flex flex justify-between  mb-4 w-[648px] gap-6 border-b  pb-4 hover:text-green-700">
+                                    <div class="">
+                                        <h2 class="font-bold text-2xl  hasib pb-[7px]">Alder Grilled Chinook Salmon</h2>
+                                        <p class="text-[#4F4F4F] text-base pb-2">Toasted French bread topped with
+                                            romano,
+                                            cheddar</p>
+                                        <span class="text-[#828282] text-base">560 CAL</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-[#195A00] font-bold text-[24px] leading-8 bottom-0">32$</span>
+                                    </div>
+                                </div>
+                
+                                <div
+                                    class="xl:flex flex justify-between  mb-4 w-[648px] gap-6 border-b  pb-4 hover:text-green-700">
+                                    <div class="">
+                                        <h2 class="font-bold text-2xl  hasib pb-[7px]">Alder Grilled Chinook Salmon</h2>
+                                        <p class="text-[#4F4F4F] text-base pb-2">Toasted French bread topped with
+                                            romano,
+                                            cheddar</p>
+                                        <span class="text-[#828282] text-base">560 CAL</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-[#195A00] font-bold text-[24px] leading-8 bottom-0">32$</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- left -->
+                            <!-- right -->
+                            <div class="">
+                                <div
+                                    class="xl:flex flex justify-between  mb-4 w-[648px] gap-6 border-b  pb-4 hover:text-green-700">
+                                    <div class="">
+                                        <h2 class="font-bold text-2xl  hasib pb-[7px]">Alder Grilled Chinook Salmon</h2>
+                                        <p class="text-[#4F4F4F] text-base pb-2">Toasted French bread topped with
+                                            romano,
+                                            cheddar</p>
+                                        <span class="text-[#828282] text-base">560 CAL</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-[#195A00] font-bold text-[24px] leading-8 bottom-0">32$</span>
+                                    </div>
+                                </div>
+                
+                                <div
+                                    class="xl:flex flex justify-between  mb-4 w-[648px] gap-6 border-b  pb-4 hover:text-green-700">
+                                    <div class="">
+                                        <h2 class="font-bold text-2xl  hasib pb-[7px]">Alder Grilled Chinook Salmon</h2>
+                                        <p class="text-[#4F4F4F] text-base pb-2">Toasted French bread topped with
+                                            romano,
+                                            cheddar</p>
+                                        <span class="text-[#828282] text-base">560 CAL</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-[#195A00] font-bold text-[24px] leading-8 bottom-0">32$</span>
+                                    </div>
+                                </div>
+                
+                                <div
+                                    class="xl:flex flex justify-between  mb-4 w-[648px] gap-6 border-b  pb-4 hover:text-green-700">
+                                    <div class="">
+                                        <h2 class="font-bold text-2xl  hasib pb-[7px]">Alder Grilled Chinook Salmon</h2>
+                                        <p class="text-[#4F4F4F] text-base pb-2">Toasted French bread topped with
+                                            romano,
+                                            cheddar</p>
+                                        <span class="text-[#828282] text-base">560 CAL</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-[#195A00] font-bold text-[24px] leading-8 bottom-0">32$</span>
+                                    </div>
+                                </div>
+                
+                                <div
+                                    class="xl:flex flex justify-between  mb-4 w-[648px] gap-6 border-b  pb-4 hover:text-green-700">
+                                    <div class="">
+                                        <h2 class="font-bold text-2xl  hasib pb-[7px]">Alder Grilled Chinook Salmon</h2>
+                                        <p class="text-[#4F4F4F] text-base pb-2">Toasted French bread topped with
+                                            romano,
+                                            cheddar</p>
+                                        <span class="text-[#828282] text-base">560 CAL</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-[#195A00] font-bold text-[24px] leading-8 bottom-0">32$</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- right -->
+                
+                        </div>
+
                     </div>
 
-                    <div class="hidden p-4 bg-gray-50 rounded-lg dark:bg-gray-800" id="settings-example" role="tabpanel" aria-labelledby="settings-tab-example">
-                        <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Settings tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+                    <div class="hidden  rounded-lg dark:bg-gray-800" id="dessert" role="tabpanel" aria-labelledby="dessert-tab">
+                       
+                        <div class="flex justify-between gap-6 pt-[56px] text-start">
+                            <!-- left -->
+                            <div class="">
+                                <div
+                                    class="xl:flex flex justify-between  mb-4 w-[648px] gap-6 border-b  pb-4 hover:text-green-700">
+                                    <div class="">
+                                        <h2 class="font-bold text-2xl  hasib pb-[7px]">Alder Grilled Chinook Salmon</h2>
+                                        <p class="text-[#4F4F4F] text-base pb-2">Toasted French bread topped with
+                                            romano,
+                                            cheddar</p>
+                                        <span class="text-[#828282] text-base">560 CAL</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-[#195A00] font-bold text-[24px] leading-8 bottom-0">32$</span>
+                                    </div>
+                                </div>
+                
+                                <div
+                                    class="xl:flex flex justify-between  mb-4 w-[648px] gap-6 border-b  pb-4 hover:text-green-700">
+                                    <div class="">
+                                        <h2 class="font-bold text-2xl  hasib pb-[7px]">Alder Grilled Chinook Salmon</h2>
+                                        <p class="text-[#4F4F4F] text-base pb-2">Toasted French bread topped with
+                                            romano,
+                                            cheddar</p>
+                                        <span class="text-[#828282] text-base">560 CAL</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-[#195A00] font-bold text-[24px] leading-8 bottom-0">32$</span>
+                                    </div>
+                                </div>
+                
+                                <div
+                                    class="xl:flex flex justify-between  mb-4 w-[648px] gap-6 border-b  pb-4 hover:text-green-700">
+                                    <div class="">
+                                        <h2 class="font-bold text-2xl  hasib pb-[7px]">Alder Grilled Chinook Salmon</h2>
+                                        <p class="text-[#4F4F4F] text-base pb-2">Toasted French bread topped with
+                                            romano,
+                                            cheddar</p>
+                                        <span class="text-[#828282] text-base">560 CAL</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-[#195A00] font-bold text-[24px] leading-8 bottom-0">32$</span>
+                                    </div>
+                                </div>
+                
+                                <div
+                                    class="xl:flex flex justify-between  mb-4 w-[648px] gap-6 border-b  pb-4 hover:text-green-700">
+                                    <div class="">
+                                        <h2 class="font-bold text-2xl  hasib pb-[7px]">Alder Grilled Chinook Salmon</h2>
+                                        <p class="text-[#4F4F4F] text-base pb-2">Toasted French bread topped with
+                                            romano,
+                                            cheddar</p>
+                                        <span class="text-[#828282] text-base">560 CAL</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-[#195A00] font-bold text-[24px] leading-8 bottom-0">32$</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- left -->
+                            <!-- right -->
+                            <div class="">
+                                <div
+                                    class="xl:flex flex justify-between  mb-4 w-[648px] gap-6 border-b  pb-4 hover:text-green-700">
+                                    <div class="">
+                                        <h2 class="font-bold text-2xl  hasib pb-[7px]">Alder Grilled Chinook Salmon</h2>
+                                        <p class="text-[#4F4F4F] text-base pb-2">Toasted French bread topped with
+                                            romano,
+                                            cheddar</p>
+                                        <span class="text-[#828282] text-base">560 CAL</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-[#195A00] font-bold text-[24px] leading-8 bottom-0">32$</span>
+                                    </div>
+                                </div>
+                
+                                <div
+                                    class="xl:flex flex justify-between  mb-4 w-[648px] gap-6 border-b  pb-4 hover:text-green-700">
+                                    <div class="">
+                                        <h2 class="font-bold text-2xl  hasib pb-[7px]">Alder Grilled Chinook Salmon</h2>
+                                        <p class="text-[#4F4F4F] text-base pb-2">Toasted French bread topped with
+                                            romano,
+                                            cheddar</p>
+                                        <span class="text-[#828282] text-base">560 CAL</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-[#195A00] font-bold text-[24px] leading-8 bottom-0">32$</span>
+                                    </div>
+                                </div>
+                
+                                <div
+                                    class="xl:flex flex justify-between  mb-4 w-[648px] gap-6 border-b  pb-4 hover:text-green-700">
+                                    <div class="">
+                                        <h2 class="font-bold text-2xl  hasib pb-[7px]">Alder Grilled Chinook Salmon</h2>
+                                        <p class="text-[#4F4F4F] text-base pb-2">Toasted French bread topped with
+                                            romano,
+                                            cheddar</p>
+                                        <span class="text-[#828282] text-base">560 CAL</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-[#195A00] font-bold text-[24px] leading-8 bottom-0">32$</span>
+                                    </div>
+                                </div>
+                
+                                <div
+                                    class="xl:flex flex justify-between  mb-4 w-[648px] gap-6 border-b  pb-4 hover:text-green-700">
+                                    <div class="">
+                                        <h2 class="font-bold text-2xl  hasib pb-[7px]">Alder Grilled Chinook Salmon</h2>
+                                        <p class="text-[#4F4F4F] text-base pb-2">Toasted French bread topped with
+                                            romano,
+                                            cheddar</p>
+                                        <span class="text-[#828282] text-base">560 CAL</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-[#195A00] font-bold text-[24px] leading-8 bottom-0">32$</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- right -->
+                
+                        </div>
+                        
                     </div>
 
-                    <div class="hidden p-4 bg-gray-50 rounded-lg dark:bg-gray-800" id="contacts-example" role="tabpanel" aria-labelledby="contacts-tab-example">
-                        <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Contacts tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+                    <div class="hidden  rounded-lg dark:bg-gray-800" id="drink" role="tabpanel" aria-labelledby="drink-tab">
+                        
+                        <div class="flex justify-between gap-6 pt-[56px] text-start">
+                            <!-- left -->
+                            <div class="">
+                                <div
+                                    class="xl:flex flex justify-between  mb-4 w-[648px] gap-6 border-b  pb-4 hover:text-green-700">
+                                    <div class="">
+                                        <h2 class="font-bold text-2xl  hasib pb-[7px]">Alder Grilled Chinook Salmon</h2>
+                                        <p class="text-[#4F4F4F] text-base pb-2">Toasted French bread topped with
+                                            romano,
+                                            cheddar</p>
+                                        <span class="text-[#828282] text-base">560 CAL</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-[#195A00] font-bold text-[24px] leading-8 bottom-0">32$</span>
+                                    </div>
+                                </div>
+                
+                                <div
+                                    class="xl:flex flex justify-between  mb-4 w-[648px] gap-6 border-b  pb-4 hover:text-green-700">
+                                    <div class="">
+                                        <h2 class="font-bold text-2xl  hasib pb-[7px]">Alder Grilled Chinook Salmon</h2>
+                                        <p class="text-[#4F4F4F] text-base pb-2">Toasted French bread topped with
+                                            romano,
+                                            cheddar</p>
+                                        <span class="text-[#828282] text-base">560 CAL</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-[#195A00] font-bold text-[24px] leading-8 bottom-0">32$</span>
+                                    </div>
+                                </div>
+                
+                                <div
+                                    class="xl:flex flex justify-between  mb-4 w-[648px] gap-6 border-b  pb-4 hover:text-green-700">
+                                    <div class="">
+                                        <h2 class="font-bold text-2xl  hasib pb-[7px]">Alder Grilled Chinook Salmon</h2>
+                                        <p class="text-[#4F4F4F] text-base pb-2">Toasted French bread topped with
+                                            romano,
+                                            cheddar</p>
+                                        <span class="text-[#828282] text-base">560 CAL</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-[#195A00] font-bold text-[24px] leading-8 bottom-0">32$</span>
+                                    </div>
+                                </div>
+                
+                                <div
+                                    class="xl:flex flex justify-between  mb-4 w-[648px] gap-6 border-b  pb-4 hover:text-green-700">
+                                    <div class="">
+                                        <h2 class="font-bold text-2xl  hasib pb-[7px]">Alder Grilled Chinook Salmon</h2>
+                                        <p class="text-[#4F4F4F] text-base pb-2">Toasted French bread topped with
+                                            romano,
+                                            cheddar</p>
+                                        <span class="text-[#828282] text-base">560 CAL</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-[#195A00] font-bold text-[24px] leading-8 bottom-0">32$</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- left -->
+                            <!-- right -->
+                            <div class="">
+                                <div
+                                    class="xl:flex flex justify-between  mb-4 w-[648px] gap-6 border-b  pb-4 hover:text-green-700">
+                                    <div class="">
+                                        <h2 class="font-bold text-2xl  hasib pb-[7px]">Alder Grilled Chinook Salmon</h2>
+                                        <p class="text-[#4F4F4F] text-base pb-2">Toasted French bread topped with
+                                            romano,
+                                            cheddar</p>
+                                        <span class="text-[#828282] text-base">560 CAL</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-[#195A00] font-bold text-[24px] leading-8 bottom-0">32$</span>
+                                    </div>
+                                </div>
+                
+                                <div
+                                    class="xl:flex flex justify-between  mb-4 w-[648px] gap-6 border-b  pb-4 hover:text-green-700">
+                                    <div class="">
+                                        <h2 class="font-bold text-2xl  hasib pb-[7px]">Alder Grilled Chinook Salmon</h2>
+                                        <p class="text-[#4F4F4F] text-base pb-2">Toasted French bread topped with
+                                            romano,
+                                            cheddar</p>
+                                        <span class="text-[#828282] text-base">560 CAL</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-[#195A00] font-bold text-[24px] leading-8 bottom-0">32$</span>
+                                    </div>
+                                </div>
+                
+                                <div
+                                    class="xl:flex flex justify-between  mb-4 w-[648px] gap-6 border-b  pb-4 hover:text-green-700">
+                                    <div class="">
+                                        <h2 class="font-bold text-2xl  hasib pb-[7px]">Alder Grilled Chinook Salmon</h2>
+                                        <p class="text-[#4F4F4F] text-base pb-2">Toasted French bread topped with
+                                            romano,
+                                            cheddar</p>
+                                        <span class="text-[#828282] text-base">560 CAL</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-[#195A00] font-bold text-[24px] leading-8 bottom-0">32$</span>
+                                    </div>
+                                </div>
+                
+                                <div
+                                    class="xl:flex flex justify-between  mb-4 w-[648px] gap-6 border-b  pb-4 hover:text-green-700">
+                                    <div class="">
+                                        <h2 class="font-bold text-2xl  hasib pb-[7px]">Alder Grilled Chinook Salmon</h2>
+                                        <p class="text-[#4F4F4F] text-base pb-2">Toasted French bread topped with
+                                            romano,
+                                            cheddar</p>
+                                        <span class="text-[#828282] text-base">560 CAL</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-[#195A00] font-bold text-[24px] leading-8 bottom-0">32$</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- right -->
+                
+                        </div>
+
+                    </div>
+
+                    <div class="hidden  rounded-lg dark:bg-gray-800" id="snack" role="tabpanel" aria-labelledby="snack-tab">
+                       
+                        <div class="flex justify-between gap-6 pt-[56px] text-start">
+                            <!-- left -->
+                            <div class="">
+                                <div class="xl:flex flex justify-between  mb-4 w-[648px] gap-6 border-b  pb-4 hover:text-green-700">
+                                    <div class="">
+                                        <h2 class="font-bold text-2xl  hasib pb-[7px]">Alder Grilled Chinook Salmon</h2>
+                                        <p class="text-[#4F4F4F] text-base pb-2">Toasted French bread topped with
+                                            romano,
+                                            cheddar</p>
+                                        <span class="text-[#828282] text-base">560 CAL</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-[#195A00] font-bold text-[24px] leading-8 bottom-0">32$</span>
+                                    </div>
+                                </div>
+
+                                <div class="xl:flex flex justify-between  mb-4 w-[648px] gap-6 border-b  pb-4 hover:text-green-700">
+                                    <div class="">
+                                        <h2 class="font-bold text-2xl  hasib pb-[7px]">Alder Grilled Chinook Salmon</h2>
+                                        <p class="text-[#4F4F4F] text-base pb-2">Toasted French bread topped with
+                                            romano,
+                                            cheddar</p>
+                                        <span class="text-[#828282] text-base">560 CAL</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-[#195A00] font-bold text-[24px] leading-8 bottom-0">32$</span>
+                                    </div>
+                                </div>
+                
+                               
+                            </div>
+                            <!-- left -->
+                            <!-- right -->
+                            <div class="">
+
+                                <div class="xl:flex flex justify-between  mb-4 w-[648px] gap-6 border-b  pb-4 hover:text-green-700">
+                                    <div class="">
+                                        <h2 class="font-bold text-2xl  hasib pb-[7px]">Alder Grilled Chinook Salmon</h2>
+                                        <p class="text-[#4F4F4F] text-base pb-2">Toasted French bread topped with
+                                            romano,
+                                            cheddar</p>
+                                        <span class="text-[#828282] text-base">560 CAL</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-[#195A00] font-bold text-[24px] leading-8 bottom-0">32$</span>
+                                    </div>
+                                </div>
+
+                                <div class="xl:flex flex justify-between  mb-4 w-[648px] gap-6 border-b  pb-4 hover:text-green-700">
+                                    <div class="">
+                                        <h2 class="font-bold text-2xl  hasib pb-[7px]">Alder Grilled Chinook Salmon</h2>
+                                        <p class="text-[#4F4F4F] text-base pb-2">Toasted French bread topped with
+                                            romano,
+                                            cheddar</p>
+                                        <span class="text-[#828282] text-base">560 CAL</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-[#195A00] font-bold text-[24px] leading-8 bottom-0">32$</span>
+                                    </div>
+                                </div>
+                
+                            </div>
+                            <!-- right -->
+                
+                        </div>
+
                     </div>
                 </div>
 
                 
-
-
-                <div class="w-[150px] mx-auto pt-6">
+                <div class="w-[150px] mx-auto">
                     <button
                         class="px-8 py-[14px] border rounded-md text-[#195A00] text-base hover:bg-[#195A00] transition duration-500 hover:text-white font-Helvetica flex justify-center">View
                         Menu</button>
@@ -1826,7 +2361,7 @@
         <div class="container">
             <div class="py-[120px] flex-wrap xl:flex gap-[82px]">
 
-                <div class="max-w-[254px]">
+                <div class="max-w-[254px] mx-auto xl:mx-0">
                     <img src="img/logo.png" alt="">
                     <p class="text-lg pt-6 pb-6 font-inter">Subscribe our newsletter and
                         get discount 25%off</p>
@@ -1882,7 +2417,7 @@
                     <!-- social icon -->
                 </div>
                 <!-- contact -->
-                <div>
+                <div class="max-w-[321px] mx-auto xl:mx-0 xl:pt-0 pt-4">
                     <h2 class="text-[20px] leading-7 font-bold pb-6 font-inter">Contact us</h2>
                     <div class="flex-wrap">
 
@@ -2014,26 +2549,32 @@
 
 
         <!-- copyright -->
-        <div class="h-[68px] bg-[#195A00] py-[22px]">
+        <div class=" bg-[#195A00] py-[22px]">
             <div class="container">
-                <div class="flex-wrap xl:flex   justify-between items-center">
+                <div class="flex-wrap xl:flex justify-between">
                     <!-- left -->
-                    <div class="pb-10 xl:pb-0">
+                    <div class="pb-10 xl:pb-0 text-center px-2 xl:px-0 xl:text-start">
                         <p class="text-base text-white">Copyright © 2000-2020.logo.com. All rights reserved</p>
                     </div>
                     <!-- left -->
                     <!-- right -->
-                    <div class="">
+                    <div class="text-center px-2">
                         <ul class="flex items-center gap-[50px]">
-                            <li class="#"><a
+                            <li class="#">
+                                <a
                                     class="text-white text-base hover:text-red-400 transition duration-300 hover:no-underline"
-                                    href="">Privacy Policy</a></li>
-                            <li class="#"><a
+                                    href="">Privacy Policy</a>
+                                </li>
+                            <li class="#">
+                                <a
                                     class="text-white text-base hover:text-red-400 transition duration-300 hover:no-underline"
-                                    href="">Term of Use</a></li>
-                            <li class="#"><a
+                                    href="">Term of Use</a>
+                                </li>
+                            <li class="#">
+                                <a
                                     class="text-white text-base hover:text-red-400 transition duration-300 hover:no-underline"
-                                    href="">Partner</a></li>
+                                    href="">Partner</a>
+                                </li>
                         </ul>
                     </div>
                     <!-- right -->
