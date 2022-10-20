@@ -1793,6 +1793,10 @@ input:checked + .toggle-bg {
   padding: 0.25rem;
 }
 
+.p-\[131px\] {
+  padding: 131px;
+}
+
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -2040,6 +2044,18 @@ input:checked + .toggle-bg {
 
 .pb-\[131px\] {
   padding-bottom: 131px;
+}
+
+.pt-\[131px\] {
+  padding-top: 131px;
+}
+
+.pb-\[px\] {
+  padding-bottom: px;
+}
+
+.pb-\[141px\] {
+  padding-bottom: 141px;
 }
 
 .text-center {
