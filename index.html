@@ -36,6 +36,7 @@
     <!-- custom css link -->
 
     <link href="./public/style.css" rel="stylesheet">
+    <link href="./public/responsive.css" rel="stylesheet">
     <link href="./public/custom.css" rel="stylesheet">
 
     <!-- custom css link -->
@@ -70,11 +71,11 @@
 
     <!-- header -->
 
-    <div class="relative overflow-hidden pb-[131px]">
+    <div class="relative overflow-hidden">
 
         <header class="overflow-hidden top-menu">
             <div class="container">
-                <div class=" py-6 flex justify-between items-center">
+                <div class="py-6 flex justify-between items-center">
 
                     <div class="flex items-center gap-[94px] ">
                         <!-- logo -->
@@ -83,10 +84,10 @@
                                 <img src="img/logo.png">
                             </a>
 
-                            <span class="cursor-pointer md:hidden mx-2 block text-gray-800">
+                            <!-- <span class="cursor-pointer md:hidden mx-2 block text-gray-800">
                                 <ion-icon name="menu" onclick="Menu(this)" style="height: 50px;
                             width: 50px;"></ion-icon>
-                            </span>
+                            </span> -->
                         </div>
                         <!-- logo -->
 
@@ -135,20 +136,7 @@
                         <ul class="flex items-center gap-4">
                             <li>
                                 <a href="#">
-                                    <!-- <svg width="24" height="24" viewBox="0 0 24 24" fill="#ffffff"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M10.875 18.7502C15.2242 18.7502 18.75 15.2245 18.75 10.8752C18.75 6.526 15.2242 3.00024 10.875 3.00024C6.52576 3.00024 3 6.526 3 10.8752C3 15.2245 6.52576 18.7502 10.875 18.7502Z"
-                                            stroke="white" stroke-width="1.5" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                        <path d="M16.4431 16.4441L20.9994 21.0004" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg> -->
-                                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000" viewBox="0 0 256 256">
-                                        <rect width="256" height="256" fill="none"></rect>
-                                        <circle cx="116" cy="116" r="84" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></circle>
-                                        <line x1="175.4" y1="175.4" x2="224" y2="224" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
-                                    </svg> -->
+                                   
 
                                     <span class="work">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -221,7 +209,7 @@
                             <span class="bg-[#195A00] border w-[34px] h-0 border-[#195A00] ml-[10px] mt-[18px]"></span>
                         </div>
 
-                        <div class="w-[521px] flex pb-8 relative">
+                        <div class="w-[521px] flex flex-wrap pb-8 relative mx-auto">
                             <h1 class=" font-bold font-Helvetica text-[60px] leading-[68px] text-[#333333]">
                                 Enjoy Healthy Life & Testy Food.</h1>
                             <span class="absolute left-[399px] top-[70px]">
@@ -245,7 +233,7 @@
                             adipiscing
                             elit.
                             Varius sed pharetra dictum neque massa congue</P>
-                        <div class="flex gap-[10px]">
+                        <div class="flex-wrap xl:flex-nowrap gap-[10px]">
 
                             <button
                                 class="px-12 py-4 border border-[#195A00] rounded-md  text-lg leading-[26px] font-bold bg-[#195A00] hover:bg-transparent transition duration-500 text-white hover:text-[#195A00] ">Show
@@ -266,7 +254,7 @@
                     <!-- right item -->
                 </div>
 
-                <div class="text-center mb-5 -mt-[110px]">
+                <div class="text-center absolute bottom-[35px] left-1/2 mx-auto">
                     <a href="#about"
                         class="cursor-pointer relative z-40 transition duration-300 pb-4 font-inter text-[14px] leading-[22px]">Scrolldowan</a>
                     <span class="mt-3">
@@ -282,6 +270,7 @@
 
                     </span>
                 </div>
+
                 <!-- <div class="text-center mx-auto">
                     
                 </div> -->
@@ -291,7 +280,7 @@
         <!-- hero aera end -->
 
         <img src="img/Bg.png" alt=""
-            class="pointer-events-none absolute top-0  right-0 bottom-[140px]">
+            class="pointer-events-none absolute left-[853px] bottom-[8.4px] z-10">
 
             <!-- <img src="img/Bg.png" alt="" class="pointer-events-none absolute top-0 right-0  bottom-[140px]"> -->
     </div>
@@ -299,10 +288,10 @@
     <!-- header end -->
 
     <!-- about section -->
-    <section class="bg-white transition-all duration-500 " id="about">
+    <section class="bg-white transition-all duration-500 pt-[131px]" id="about">
 
-        <div class="container">
-            <div class="flex justify-between items-center ">
+        <div class="container px-4 xl:px-0">
+            <div class="flex flex-wrap xl:flex-nowrap justify-between items-center ">
                 <!-- left item -->
                 <div class="grid grid-flow-col gap-6 w-[669px]">
                     <div class="row-span-3">
@@ -318,8 +307,8 @@
                 <!-- left item -->
 
                 <!-- right item -->
-                <div class="w-[526px]">
-                    <div class="flex pb-2">
+                <div class="w-[526px] mx-auto">
+                    <div class="flex pb-2 mx-auto">
                         <h4 class="font-miniver text-lg leading-[26px] text-[#195A00] ">About us</h4>
                         <!-- <hr class="bg-[#195A00] border w-[34px] h-0 border-[#195A00] pl-[10px]"> -->
                         <span class="bg-[#195A00] border w-[34px] h-0 border-[#195A00] ml-[10px] mt-[18px]"></span>
@@ -331,11 +320,13 @@
                         elit. Quisque diam pellentesque bibendum non dui volutpat fringilla bibendum. Urna, elit augue
                         urna, vitae feugiat pretium donec id elementum. Ultrices mattis vitae mus risus. Lacus nisi, et
                         ac dapibus sit eu velit in consequat.</p>
-                    <div class="flex gap-[10px]">
+                    <div class="flex flex-wrap gap-[10px]">
 
                         <button
                             class="px-12 py-4 bg-[#195A00] text-white rounded-md text-lg transition duration-500 border hover:bg-transparent hover:text-[#195A00] hover:border-[#195A00]">Show
                             More</button>
+
+                            
 
                         <button class="flex gap-[10px] items-center">
                             <span>
@@ -361,7 +352,7 @@
     <!-- food category start -->
     <section class="pt-[160px] mx-auto">
         <div class="container">
-            <div class="w-[418px]  mx-auto relative">
+            <div class="xl:w-[418px]  mx-auto relative">
                 <h2 class="text-[#333333] text-center font-bold text-5xl leading-[56px] font-Helvetica capitalize pb-2">
                     food category
                 </h2>
@@ -374,7 +365,7 @@
             <!-- food category -->
             <div class="pt-14 flex-wrap xl:flex gap-6 items-center single-item">
                 <!-- food item -->
-                <div class="w-[312px]">
+                <div class="w-[312px] mx-auto">
                     <div class="pb-4">
                         <img src="img/food.png" alt="">
                     </div>
@@ -453,28 +444,28 @@
     <!-- why chouse us  -->
 
     <section class="mt-10">
-        <div class="container">
+        <div class="container px-4 xl:px-0">
             <div class="flex-wrap flex justify-between items-center pt-[98px]">
                 <!-- left -->
                 <div class="relative">
-                    <div class="flex max-w-[698px]">
+                    <div class="flex xl:max-w-[698px] mx-auto">
                         <img src="img/why1.png" alt="" class="object-cover h-[523px] relative z-30">
-                        <img src="img/about3.png" alt=""
-                            class="object-cover mt-[100px] -ml-[111px] h-[523px] relative z-50">
+                        <!-- <img src="img/about3.png" alt=""
+                            class="object-cover mt-[100px] -ml-[111px] h-[523px] relative z-50"> -->
                     </div>
                     <!-- <div class="pl-[313px] mt-20 relative z-50">
                        
                     </div> -->
                     <!-- <img src="img/about3.png" alt="" class="absolute bottom-0"> -->
                     <img src="img/unsplash_Wu0MmDYdUB4 (1).png" alt=""
-                        class="object-cover absolute left-[305px] top-[-117px] bottom-0 transform:rotate-45  z-10">
+                        class="object-cover absolute xl:left-[305px] xl:top-[-117px] top-[200px] bottom-0 transform:rotate-45 z-10 ">
                 </div>
                 <!-- left -->
                 <!-- right -->
-                <div class="w-[538px]">
+                <div class="xl:max-w-[538px] mx-auto">
 
-                    <div class="flex pb-2">
-                        <h4 class="font-miniver text-lg leading-[26px] text-[#195A00] ">Why Choose us</h4>
+                    <div class="flex pb-2 text-center">
+                        <h4 class="font-miniver text-3xl xl:text-lg leading-[26px] text-[#195A00] ">Why Choose us</h4>
                         <span class="bg-[#195A00] border w-[34px] h-0 border-[#195A00] ml-[10px] mt-[18px]"></span>
                     </div>
                     <h2 class="text-[48px] leading-[56px] font-bold  text-[#333333] pb-8">Why We are the best?</h2>
@@ -485,9 +476,10 @@
                     <P class="text-base text-[#828282] pb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Varius sed pharetra dictum neque massa congue</P>
                     <!-- box -->
+                    
                     <div class="grid grid-cols-1 xl:grid-cols-2 items-center gap-6 w-full">
                         <!-- box item -->
-                        <div class="flex items-center rounded-md bg-white gap-5 border-l-4 border-transparent shadow-[0px_0px_80px_rgba(205,205,205,0.25);]  hover:border-[#195A00] py-3 px-3 transition ease-in-out duration-300 w-[260px]">
+                        <div class="flex items-center rounded-md bg-white gap-5 border-l-4 border-transparent shadow-[0px_0px_80px_rgba(205,205,205,0.25);]  hover:border-[#195A00] py-3 px-3 transition ease-in-out duration-300 xl:w-[260px] w-full">
                             <span>
                                 <svg width="56" height="55" viewBox="0 0 56 55" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -519,8 +511,7 @@
                             <span class="text-20px leading-7 font-bold">Fast Delivery</span>
                         </div>
 
-                        <div
-                            class="flex items-center rounded-md bg-white gap-5 border-l-4 border-transparent shadow-[0px_0px_80px_rgba(205,205,205,0.25);]  hover:border-[#195A00] py-3 px-3 transition ease-in-out duration-300 w-[260px]">
+                        <div class="flex items-center rounded-md bg-white gap-5 border-l-4 border-transparent shadow-[0px_0px_80px_rgba(205,205,205,0.25);]  hover:border-[#195A00] py-3 px-3 transition ease-in-out duration-300 xl:w-[260px] w-full">
                             <span>
                                 <svg width="55" height="56" viewBox="0 0 55 56" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -538,8 +529,7 @@
                             <span class="text-20px leading-7 font-bold">24/7 services</span>
                         </div>
 
-                        <div
-                            class="flex items-center rounded-md bg-white gap-5 border-l-4 border-transparent shadow-[0px_0px_80px_rgba(205,205,205,0.25);]  hover:border-[#195A00] py-3 px-3 transition ease-in-out duration-300 w-[260px]">
+                        <div class="flex items-center rounded-md bg-white gap-5 border-l-4 border-transparent shadow-[0px_0px_80px_rgba(205,205,205,0.25);]  hover:border-[#195A00] py-3 px-3 transition ease-in-out duration-300 xl:w-[260px] w-full">
                             <span>
                                 <svg width="55" height="57" viewBox="0 0 55 57" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -564,8 +554,7 @@
                             <span class="text-20px leading-7 font-bold">Fresh food</span>
                         </div>
 
-                        <div
-                            class="flex items-center rounded-md bg-white gap-5 border-l-4 border-transparent shadow-[0px_0px_80px_rgba(205,205,205,0.25);]  hover:border-[#195A00] py-3 px-3 transition ease-in-out duration-300 w-[260px]">
+                        <div class="flex items-center rounded-md bg-white gap-5 border-l-4 border-transparent shadow-[0px_0px_80px_rgba(205,205,205,0.25);]  hover:border-[#195A00] py-3 px-3 transition ease-in-out duration-300 xl:w-[260px] w-full">
                             <span>
                                 <svg width="55" height="56" viewBox="0 0 55 56" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -598,14 +587,14 @@
     <!-- why chouse us end -->
 
     <!-- food menu -->
-    <section class="pt-[126px] pb-[199px]">
-        <div class="container">
-            <div class="max-w-[1320px]">
-                <div class="sm:text-left xl:text-center w-[400px] mx-auto">
-                    <h2 class="pb-2 font-bold text-[48px] leading-[56px] text-[#333333] font-Helvetica">
+    <section class="pt-[126px] xl:pb-[199px] pb-8">
+        <div class="container px-4 xl:px-0">
+            <div class="xl:max-w-[1320px]">
+                <div class="sm:text-left xl:text-center xl:max-w-[400px] mx-auto">
+                    <h2 class="pb-2 font-bold text-4xl text-center xl:text-[48px] leading-[56px] text-[#333333] font-Helvetica">
                         Our Food Menu
                     </h2>
-                    <p class="text-base text-[#4F4F4F] pb-[56px] font-inter">
+                    <p class="text-base text-[#4F4F4F] pb-[56px] font-inter text-center">
                         Lorem ipsum dolor sit amet, consectetur adipiscing
                         elit.Varius sed pharetra dictum neque massa congue</p>
                 </div>
@@ -646,10 +635,10 @@
                
                     <div class="hidden rounded-lg dark:bg-gray-800" id="breakfast" role="tabpanel" aria-labelledby="breakfast-tab">
                         
-                        <div class="xl:flex flex-wrap justify-between gap-6 pt-[56px] text-start">
+                        <div class="flex flex-wrap xl:flex-nowrap justify-between gap-6 pt-[56px] text-start">
                             <!-- left -->
                             <div class="">
-                                <div class="xl:flex flex-wrap justify-between  mb-4 w-[648px] gap-6 border-b  pb-4 hover:text-green-700">
+                                <div class="xl:flex justify-between  mb-4 xl:w-[648px] gap-6 border-b  pb-4 hover:text-green-700">
                                     <div class="">
                                         <h2 class="font-bold text-2xl  hasib pb-[7px]">Alder Grilled Chinook Salmon</h2>
                                         <p class="text-[#4F4F4F] text-base pb-2">Toasted French bread topped with
@@ -657,12 +646,12 @@
                                             cheddar</p>
                                         <span class="text-[#828282] text-base">560 CAL</span>
                                     </div>
-                                    <div>
+                                    <div class="pt-2 xl:pt-0">
                                         <span class="text-[#195A00] font-bold text-[24px] leading-8 bottom-0">32$</span>
                                     </div>
                                 </div>
                 
-                                <div class="xl:flex flex-wrap justify-between  mb-4 w-[648px] gap-6 border-b  pb-4 hover:text-green-700">
+                                <div class="xl:flex justify-between  mb-4 xl:w-[648px] gap-6 border-b  pb-4 hover:text-green-700">
                                     <div class="">
                                         <h2 class="font-bold text-2xl  hasib pb-[7px]">Alder Grilled Chinook Salmon</h2>
                                         <p class="text-[#4F4F4F] text-base pb-2">Toasted French bread topped with
@@ -670,12 +659,12 @@
                                             cheddar</p>
                                         <span class="text-[#828282] text-base">560 CAL</span>
                                     </div>
-                                    <div>
+                                    <div class="pt-2 xl:pt-0">
                                         <span class="text-[#195A00] font-bold text-[24px] leading-8 bottom-0">32$</span>
                                     </div>
                                 </div>
                 
-                                <div class="xl:flex flex-wrap justify-between  mb-4 w-[648px] gap-6 border-b  pb-4 hover:text-green-700">
+                                <div class="xl:flex justify-between  mb-4 xl:w-[648px] gap-6 border-b  pb-4 hover:text-green-700">
                                     <div class="">
                                         <h2 class="font-bold text-2xl  hasib pb-[7px]">Alder Grilled Chinook Salmon</h2>
                                         <p class="text-[#4F4F4F] text-base pb-2">Toasted French bread topped with
@@ -683,16 +672,28 @@
                                             cheddar</p>
                                         <span class="text-[#828282] text-base">560 CAL</span>
                                     </div>
-                                    <div>
+                                    <div class="pt-2 xl:pt-0">
                                         <span class="text-[#195A00] font-bold text-[24px] leading-8 bottom-0">32$</span>
                                     </div>
                                 </div>
                 
+                                <div class="xl:flex justify-between  mb-4 xl:w-[648px] gap-6 border-b  pb-4 hover:text-green-700">
+                                    <div class="">
+                                        <h2 class="font-bold text-2xl  hasib pb-[7px]">Alder Grilled Chinook Salmon</h2>
+                                        <p class="text-[#4F4F4F] text-base pb-2">Toasted French bread topped with
+                                            romano,
+                                            cheddar</p>
+                                        <span class="text-[#828282] text-base">560 CAL</span>
+                                    </div>
+                                    <div class="pt-2 xl:pt-0">
+                                        <span class="text-[#195A00] font-bold text-[24px] leading-8 bottom-0">32$</span>
+                                    </div>
+                                </div>
                             </div>
                             <!-- left -->
                             <!-- right -->
                             <div class="">
-                                <div class="xl:flex flex-wrap justify-between  mb-4 w-[648px] gap-6 border-b  pb-4 hover:text-green-700">
+                                <div class="xl:flex justify-between  mb-4 xl:w-[648px] gap-6 border-b  pb-4 hover:text-green-700">
                                     <div class="">
                                         <h2 class="font-bold text-2xl  hasib pb-[7px]">Alder Grilled Chinook Salmon</h2>
                                         <p class="text-[#4F4F4F] text-base pb-2">Toasted French bread topped with
@@ -700,12 +701,12 @@
                                             cheddar</p>
                                         <span class="text-[#828282] text-base">560 CAL</span>
                                     </div>
-                                    <div>
+                                    <div class="pt-2 xl:pt-0">
                                         <span class="text-[#195A00] font-bold text-[24px] leading-8 bottom-0">32$</span>
                                     </div>
                                 </div>
                 
-                                <div class="xl:flex flex-wrap justify-between  mb-4 w-[648px] gap-6 border-b  pb-4 hover:text-green-700">
+                                <div class="xl:flex justify-between  mb-4 xl:w-[648px] gap-6 border-b  pb-4 hover:text-green-700">
                                     <div class="">
                                         <h2 class="font-bold text-2xl  hasib pb-[7px]">Alder Grilled Chinook Salmon</h2>
                                         <p class="text-[#4F4F4F] text-base pb-2">Toasted French bread topped with
@@ -713,12 +714,12 @@
                                             cheddar</p>
                                         <span class="text-[#828282] text-base">560 CAL</span>
                                     </div>
-                                    <div>
+                                    <div class="pt-2 xl:pt-0">
                                         <span class="text-[#195A00] font-bold text-[24px] leading-8 bottom-0">32$</span>
                                     </div>
                                 </div>
                 
-                                <div class="xl:flex flex-wrap justify-between  mb-4 w-[648px] gap-6 border-b  pb-4 hover:text-green-700">
+                                <div class="xl:flex justify-between  mb-4 xl:w-[648px] gap-6 border-b  pb-4 hover:text-green-700">
                                     <div class="">
                                         <h2 class="font-bold text-2xl  hasib pb-[7px]">Alder Grilled Chinook Salmon</h2>
                                         <p class="text-[#4F4F4F] text-base pb-2">Toasted French bread topped with
@@ -726,11 +727,23 @@
                                             cheddar</p>
                                         <span class="text-[#828282] text-base">560 CAL</span>
                                     </div>
-                                    <div>
+                                    <div class="pt-2 xl:pt-0">
                                         <span class="text-[#195A00] font-bold text-[24px] leading-8 bottom-0">32$</span>
                                     </div>
                                 </div>
                 
+                                <div class="xl:flex justify-between  mb-4 xl:w-[648px] gap-6 border-b  pb-4 hover:text-green-700">
+                                    <div class="">
+                                        <h2 class="font-bold text-2xl  hasib pb-[7px]">Alder Grilled Chinook Salmon</h2>
+                                        <p class="text-[#4F4F4F] text-base pb-2">Toasted French bread topped with
+                                            romano,
+                                            cheddar</p>
+                                        <span class="text-[#828282] text-base">560 CAL</span>
+                                    </div>
+                                    <div class="pt-2 xl:pt-0">
+                                        <span class="text-[#195A00] font-bold text-[24px] leading-8 bottom-0">32$</span>
+                                    </div>
+                                </div>
                             </div>
                             <!-- right -->
                 
@@ -1326,31 +1339,31 @@
     <!-- food menu end -->
 
     <!-- team -->
-    <section class="relative pb-[120px]">
-        <img src="img/unsplash_1qnIDA6gZ1g.png" alt="" class="absolute bottom-[50px] right-0 -top-[397px] z-50">
+    <section class="relative xl:pb-[120px] pb-0">
+        <img src="img/unsplash_1qnIDA6gZ1g.png" alt="" class="absolute bottom-[50px] right-0 -top-[397px] z-50 hidden">
 
         <!-- team -->
-        <div class="h-[460px] custom-bg relative">
-            <div class="w-[418px] mx-auto sm:text-left xl:text-center relative z-50">
+        <div class="h-[460px] custom-bg relative px-4 xl:px-0">
+            <div class="xl:w-[418px] mx-auto sm:text-left xl:text-center relative z-50">
                 <h2 class="text-white font-Helvetica font-bold text-[48px] leading-[56px] pt-[120px] pb-2">Team Member
                 </h2>
                 <p class="text-white text-base pb-8 font-inter">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Varius sed pharetra dictum neque massa congue</p>
             </div>
-            <img src="img/com.png" class="absolute top-[80px] xl:left-[940px] left-0 z-10" alt="">
+            <img src="img/com.png" class="xl:absolute top-[80px] xl:left-[940px] left-0 z-10 hidden" alt="">
 
         </div>
         <!-- team -->
 
-        <div class="container -mt-[172px]">
+        <div class="container -mt-[172px] px-4 xl:px-0">
 
             <!-- our team -->
             <div class="flex-wrap  md:flex xl:flex items-center mx-auto justify-center gap-6">
                 <!-- class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 items-center mx-auto justify-center gap-6 mt-[70px]"> -->
 
                 <!-- team item -->
-                <div class="w-[312px] h-[310px]  bg-white">
-                    <div class="relative">
+                <div class="xl:max-w-[312px] w-full  bg-white relative">
+                    <div class="">
                         <div>
                             <img src="img/unsplash_v3OlBE6-fhU.png" alt="" class="h-[310px] w-full">
                         </div>
@@ -1431,7 +1444,7 @@
 
                 </div>
 
-                <div class="w-[312px] h-[310px]  bg-white relative">
+                <div class="xl:max-w-[312px] w-full  bg-white relative">
                     <div>
                         <img src="img/unsplash_v3OlBE6-fhU.png" alt="" class="h-[310px] w-full">
                     </div>
@@ -1510,7 +1523,7 @@
                     <!-- overly eiffects -->
                 </div>
 
-                <div class="w-[312px] h-[310px]  bg-white relative">
+                <div class="xl:max-w-[312px] w-full  bg-white relative">
                     <div>
                         <img src="img/unsplash_v3OlBE6-fhU.png" alt="" class="h-[310px] w-full">
                     </div>
@@ -1589,7 +1602,7 @@
                     <!-- overly eiffects -->
                 </div>
 
-                <div class="w-[312px] h-[310px]  bg-white relative">
+                <div class="xl:max-w-[312px] w-full  bg-white relative">
                     <div>
                         <img src="img/unsplash_v3OlBE6-fhU.png" alt="" class="h-[310px] w-full">
                     </div>
@@ -1676,22 +1689,22 @@
     <!-- team end -->
 
     <!-- customer Review -->
-    <section class="mt-[60px]">
-        <div class="container">
+    <section class="xl:mt-[60px] mt-0">
+        <div class="container px-4 xl:px-0">
 
             <!-- slider -->
             <div class="customer-review pb-[120px]">
                 <!-- slider item -->
                 <div class="item">
-                    <div class="flex justify-between">
+                    <div class="xl:flex flex-wrap justify-between">
                         <!-- left -->
-                        <div class="w-[536px]">
-                            <div class="flex">
-                                <h4 class="font-miniver text-lg leading-[26px] text-[#195A00] ">Why Choose us</h4>
+                        <div class="xl:w-[536px]">
+                            <div class="flex xl:w-[250px] w-full">
+                                <h4 class="font-miniver text-lg leading-[26px] text-[#195A00]">Testimonials</h4>
                                 <span
-                                    class="bg-[#195A00] border w-[34px] h-0 border-[#195A00] ml-[10px] mt-[18px]"></span>
+                                    class="bg-[#195A00] border xl:w-[34px] h-0 border-[#195A00] ml-[10px] mt-[18px]"></span>
                             </div>
-                            <h2 class="font-bold text-[48px] leading-[56px] pt-2 pb-2">Customer Review</h2>
+                            <h2 class="font-bold text-center text-4xl xl:text-[48px] leading-[56px] pt-2 pb-2">Customer Review</h2>
                             <div>
                                 <!-- customer review -->
                                 <div class="flex">
@@ -1713,7 +1726,7 @@
 
                                             </span>
 
-                                            <p class="text-base text-[#828282] pb-6 ">Lorem ipsum dolor sit amet,
+                                            <p class="text-base text-center text-[#828282] pb-6 ">Lorem ipsum dolor sit amet,
                                                 consectetur
                                                 adipiscing elit. Quisque diam pellentesque bibendum non dui volutpat
                                                 fringilla
@@ -1725,15 +1738,13 @@
 
                                         </div>
 
-                                        <div class="flex gap-4">
+                                        <div class="flex gap-4 pb-4 justify-center xl:justify-start">
                                             <div class="">
                                                 <img src="img/Ellipse 2552.png" alt="">
                                             </div>
                                             <div>
-                                                <h4
-                                                    class="font-bold text-[18px] leading-[26px] text-[#4F4F4F] pb-[7px]">
-                                                    Abdur
-                                                    Rahman</h4>
+                                                <h4 class="font-bold text-[18px] leading-[26px] text-[#4F4F4F] pb-[7px]">
+                                                    Abdur Rahman</h4>
                                                 <p class="text-base text-[#828282]">Customer</p>
                                             </div>
                                         </div>
@@ -1748,12 +1759,12 @@
 
                         <!-- right -->
                         <div class="pb-12">
-                            <div class="w-[480px] ml-10">
+                            <div class="xl:w-[480px] w-full xl:ml-10 ml-0">
                                 <img src="img/unsplash_oT7_v-I0hHg.png" alt="">
                             </div>
 
                             <div
-                                class="px-[30px] py-8 bg-white rounded-md shadow-[0px_4px_40px_rgba(0,0,0,0.1)] shadow-gray-400 w-[436px] relative z-10 -mt-[95px] pt-[37px]">
+                                class="px-[30px] py-8 bg-white rounded-md xl:shadow-[0px_4px_40px_rgba(0,0,0,0.1)] xl:w-[434px] relative z-10 -mt-[95px] pt-[37px]">
 
                                 <div class="flex justify-between items-center pb-[10px]">
                                     <h2 class="text-[20px] leading-7 font-bold text-[#333333]">Order now</h2>
@@ -1812,17 +1823,19 @@
                         <!-- right -->
                     </div>
                 </div>
+                <!-- slider item end -->
 
-                <div class="item">
-                    <div class="flex justify-between">
+                 <!-- slider item -->
+                 <div class="item">
+                    <div class="xl:flex flex-wrap justify-between">
                         <!-- left -->
-                        <div class="w-[536px]">
-                            <div class="flex">
-                                <h4 class="font-miniver text-lg leading-[26px] text-[#195A00] ">Why Choose us</h4>
+                        <div class="xl:w-[536px]">
+                            <div class="flex xl:w-[250px] w-full">
+                                <h4 class="font-miniver text-lg leading-[26px] text-[#195A00]">Testimonials</h4>
                                 <span
-                                    class="bg-[#195A00] border w-[34px] h-0 border-[#195A00] ml-[10px] mt-[18px]"></span>
+                                    class="bg-[#195A00] border xl:w-[34px] h-0 border-[#195A00] ml-[10px] mt-[18px]"></span>
                             </div>
-                            <h2 class="font-bold text-[48px] leading-[56px] pt-2 pb-2">Customer Review</h2>
+                            <h2 class="font-bold text-center text-4xl xl:text-[48px] leading-[56px] pt-2 pb-2">Customer Review</h2>
                             <div>
                                 <!-- customer review -->
                                 <div class="flex">
@@ -1844,7 +1857,7 @@
 
                                             </span>
 
-                                            <p class="text-base text-[#828282] pb-6 ">Lorem ipsum dolor sit amet,
+                                            <p class="text-base text-center text-[#828282] pb-6 ">Lorem ipsum dolor sit amet,
                                                 consectetur
                                                 adipiscing elit. Quisque diam pellentesque bibendum non dui volutpat
                                                 fringilla
@@ -1856,15 +1869,13 @@
 
                                         </div>
 
-                                        <div class="flex gap-4">
+                                        <div class="flex gap-4 pb-4 justify-center xl:justify-start">
                                             <div class="">
                                                 <img src="img/Ellipse 2552.png" alt="">
                                             </div>
                                             <div>
-                                                <h4
-                                                    class="font-bold text-[18px] leading-[26px] text-[#4F4F4F] pb-[7px]">
-                                                    Abdur
-                                                    Rahman</h4>
+                                                <h4 class="font-bold text-[18px] leading-[26px] text-[#4F4F4F] pb-[7px]">
+                                                    Abdur Rahman</h4>
                                                 <p class="text-base text-[#828282]">Customer</p>
                                             </div>
                                         </div>
@@ -1879,12 +1890,12 @@
 
                         <!-- right -->
                         <div class="pb-12">
-                            <div class="w-[480px] ml-10">
+                            <div class="xl:w-[480px] w-full xl:ml-10 ml-0">
                                 <img src="img/unsplash_oT7_v-I0hHg.png" alt="">
                             </div>
 
                             <div
-                                class="px-[30px] py-8 bg-white rounded-md shadow-[0px_4px_40px_rgba(0,0,0,0.1)] shadow-gray-400 w-[436px] relative z-10 -mt-[95px] pt-[37px]">
+                                class="px-[30px] py-8 bg-white rounded-md xl:shadow-[0px_4px_40px_rgba(0,0,0,0.1)] xl:w-[434px] relative z-10 -mt-[95px] pt-[37px]">
 
                                 <div class="flex justify-between items-center pb-[10px]">
                                     <h2 class="text-[20px] leading-7 font-bold text-[#333333]">Order now</h2>
@@ -1943,17 +1954,19 @@
                         <!-- right -->
                     </div>
                 </div>
+                <!-- slider item end -->
 
-                <div class="item">
-                    <div class="flex justify-between">
+                 <!-- slider item -->
+                 <div class="item">
+                    <div class="xl:flex flex-wrap justify-between">
                         <!-- left -->
-                        <div class="w-[536px]">
-                            <div class="flex">
-                                <h4 class="font-miniver text-lg leading-[26px] text-[#195A00] ">Why Choose us</h4>
+                        <div class="xl:w-[536px]">
+                            <div class="flex xl:w-[250px] w-full">
+                                <h4 class="font-miniver text-lg leading-[26px] text-[#195A00]">Testimonials</h4>
                                 <span
-                                    class="bg-[#195A00] border w-[34px] h-0 border-[#195A00] ml-[10px] mt-[18px]"></span>
+                                    class="bg-[#195A00] border xl:w-[34px] h-0 border-[#195A00] ml-[10px] mt-[18px]"></span>
                             </div>
-                            <h2 class="font-bold text-[48px] leading-[56px] pt-2 pb-2">Customer Review</h2>
+                            <h2 class="font-bold text-center text-4xl xl:text-[48px] leading-[56px] pt-2 pb-2">Customer Review</h2>
                             <div>
                                 <!-- customer review -->
                                 <div class="flex">
@@ -1975,7 +1988,7 @@
 
                                             </span>
 
-                                            <p class="text-base text-[#828282] pb-6 ">Lorem ipsum dolor sit amet,
+                                            <p class="text-base text-center text-[#828282] pb-6 ">Lorem ipsum dolor sit amet,
                                                 consectetur
                                                 adipiscing elit. Quisque diam pellentesque bibendum non dui volutpat
                                                 fringilla
@@ -1987,15 +2000,13 @@
 
                                         </div>
 
-                                        <div class="flex gap-4">
+                                        <div class="flex gap-4 pb-4 justify-center xl:justify-start">
                                             <div class="">
                                                 <img src="img/Ellipse 2552.png" alt="">
                                             </div>
                                             <div>
-                                                <h4
-                                                    class="font-bold text-[18px] leading-[26px] text-[#4F4F4F] pb-[7px]">
-                                                    Abdur
-                                                    Rahman</h4>
+                                                <h4 class="font-bold text-[18px] leading-[26px] text-[#4F4F4F] pb-[7px]">
+                                                    Abdur Rahman</h4>
                                                 <p class="text-base text-[#828282]">Customer</p>
                                             </div>
                                         </div>
@@ -2010,12 +2021,12 @@
 
                         <!-- right -->
                         <div class="pb-12">
-                            <div class="w-[480px] ml-10">
+                            <div class="xl:w-[480px] w-full xl:ml-10 ml-0">
                                 <img src="img/unsplash_oT7_v-I0hHg.png" alt="">
                             </div>
 
                             <div
-                                class="px-[30px] py-8 bg-white rounded-md shadow-[0px_4px_40px_rgba(0,0,0,0.1)] shadow-gray-400 w-[436px] relative z-10 -mt-[95px] pt-[37px]">
+                                class="px-[30px] py-8 bg-white rounded-md xl:shadow-[0px_4px_40px_rgba(0,0,0,0.1)] xl:w-[434px] relative z-10 -mt-[95px] pt-[37px]">
 
                                 <div class="flex justify-between items-center pb-[10px]">
                                     <h2 class="text-[20px] leading-7 font-bold text-[#333333]">Order now</h2>
@@ -2074,9 +2085,6 @@
                         <!-- right -->
                     </div>
                 </div>
-
-
-
                 <!-- slider item end -->
 
             </div>
@@ -2087,12 +2095,12 @@
     <!-- customer Review end -->
 
     <!-- blog -->
-    <section class="mt-[144px">
-        <div class="container">
-            <div class="w-[444px] pb-[56px] mx-auto">
-                <h2 class="text-center font-Helvetica font-bold text-[48px] leading-[56px] pb-2 text-[#333333]">Latest
-                    news & Blog</h2>
-                <p class="text-[#4F4F4F] text-base font-Helvetica">
+    <section class="">
+        <div class="container px-4 xl:px-0">
+            <div class="xl:max-w-[444px] pb-[56px] w-full mx-auto">
+                <h2 class="text-center font-Helvetica font-bold xl:text-[48px] text-2xl xl:leading-[56px] pb-2 text-[#333333]">
+                    Latest news & Blog</h2>
+                <p class="text-[#4F4F4F] xl:text-base font-Helvetica text-[20px] text-center">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Varius sed pharetra dictum neque massa congue</p>
             </div>
@@ -2100,15 +2108,16 @@
             <div class="flex-wrap xl:flex gap-6">
                 <!-- blog item -->
                 <!-- <div class="w-[424px] px-4 bg-white blog-item"> -->
-                <div class="w-[424px] px-4 shadow-[0px_0px_80px_rgba(205,205,205,0.25);] rounded-md relative">
+                <div class="xl:w-[424px] px-4 shadow-[0px_0px_80px_rgba(205,205,205,0.25);] rounded-md relative pb-4 xl:pb-0">
                     <a href="#" class="hover:no-underline">
                         <div class="-mt-[19px]">
                             <img src="img/unsplash_WBMi3TLZdZc.png" alt="">
                         </div>
-                        <div class="flex items-center gap-6">
+                        <div class="flex xl:justify-start justify-center items-center gap-6">
 
                             <div class="flex gap-3 items-center pt-6">
-                                <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                <span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M19.5 3.75H4.5C4.08579 3.75 3.75 4.08579 3.75 4.5V19.5C3.75 19.9142 4.08579 20.25 4.5 20.25H19.5C19.9142 20.25 20.25 19.9142 20.25 19.5V4.5C20.25 4.08579 19.9142 3.75 19.5 3.75Z"
@@ -2132,7 +2141,8 @@
                             </div>
 
                             <div class="flex gap-3 items-center pt-6">
-                                <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                <span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M6.71096 13.5L3.00006 16.5V4.5C3.00006 4.30109 3.07908 4.11032 3.21973 3.96967C3.36038 3.82902 3.55115 3.75 3.75006 3.75H15.7501C15.949 3.75 16.1397 3.82902 16.2804 3.96967C16.421 4.11032 16.5001 4.30109 16.5001 4.5V12.75C16.5001 12.9489 16.421 13.1397 16.2804 13.2803C16.1397 13.421 15.949 13.5 15.7501 13.5H6.71096Z"
@@ -2148,13 +2158,13 @@
                                 <span>Comments (03)</span>
                             </div>
                         </div>
-                        <div>
+                        <div class="text-center xl:text-start">
                             <h2 class="font-bold text-[20px] leading-[28px] pt-4 pb-2">Chocolate Truffle Cake With
                                 Honey Flavor</h2>
                             <p class="text-base pb-4">Lorem ipsum dolor sit amet, consectetur elit. Non mi sed etiam a
                                 id at ultricies neque.Tempus,poten diam ac integer id tellus est.</p>
                         </div>
-                        <button class="flex gap-2 items-center py-2 rounded-md pb-6">
+                        <button class="flex gap-2 items-center py-2 rounded-md pb-6 mx-auto xl:mx-0">
                             <span class="font-Helvetica text-[14px] leading-[22px] text-[#4F4F4F]">Read more</span>
                             <span class="">
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
@@ -2169,15 +2179,16 @@
                     </a>
                 </div>
 
-                <div class="w-[424px] px-4 shadow-[0px_0px_80px_rgba(205,205,205,0.25);] rounded-md relative">
+                <div class="xl:w-[424px] px-4 shadow-[0px_0px_80px_rgba(205,205,205,0.25);] rounded-md relative pb-4 xl:pb-0">
                     <a href="#" class="hover:no-underline">
                         <div class="-mt-[19px]">
                             <img src="img/unsplash_WBMi3TLZdZc.png" alt="">
                         </div>
-                        <div class="flex items-center gap-6">
+                        <div class="flex xl:justify-start justify-center items-center gap-6">
 
                             <div class="flex gap-3 items-center pt-6">
-                                <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                <span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M19.5 3.75H4.5C4.08579 3.75 3.75 4.08579 3.75 4.5V19.5C3.75 19.9142 4.08579 20.25 4.5 20.25H19.5C19.9142 20.25 20.25 19.9142 20.25 19.5V4.5C20.25 4.08579 19.9142 3.75 19.5 3.75Z"
@@ -2201,7 +2212,8 @@
                             </div>
 
                             <div class="flex gap-3 items-center pt-6">
-                                <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                <span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M6.71096 13.5L3.00006 16.5V4.5C3.00006 4.30109 3.07908 4.11032 3.21973 3.96967C3.36038 3.82902 3.55115 3.75 3.75006 3.75H15.7501C15.949 3.75 16.1397 3.82902 16.2804 3.96967C16.421 4.11032 16.5001 4.30109 16.5001 4.5V12.75C16.5001 12.9489 16.421 13.1397 16.2804 13.2803C16.1397 13.421 15.949 13.5 15.7501 13.5H6.71096Z"
@@ -2217,13 +2229,13 @@
                                 <span>Comments (03)</span>
                             </div>
                         </div>
-                        <div>
+                        <div class="text-center xl:text-start">
                             <h2 class="font-bold text-[20px] leading-[28px] pt-4 pb-2">Chocolate Truffle Cake With
                                 Honey Flavor</h2>
                             <p class="text-base pb-4">Lorem ipsum dolor sit amet, consectetur elit. Non mi sed etiam a
                                 id at ultricies neque.Tempus,poten diam ac integer id tellus est.</p>
                         </div>
-                        <button class="flex gap-2 items-center py-2 rounded-md pb-6">
+                        <button class="flex gap-2 items-center py-2 rounded-md pb-6 mx-auto xl:mx-0">
                             <span class="font-Helvetica text-[14px] leading-[22px] text-[#4F4F4F]">Read more</span>
                             <span class="">
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
@@ -2238,15 +2250,16 @@
                     </a>
                 </div>
 
-                <div class="w-[424px] px-4 shadow-[0px_0px_80px_rgba(205,205,205,0.25);] rounded-md relative">
+                <div class="xl:w-[424px] px-4 shadow-[0px_0px_80px_rgba(205,205,205,0.25);] rounded-md relative pb-4 xl:pb-0">
                     <a href="#" class="hover:no-underline">
                         <div class="-mt-[19px]">
                             <img src="img/unsplash_WBMi3TLZdZc.png" alt="">
                         </div>
-                        <div class="flex items-center gap-6">
+                        <div class="flex xl:justify-start justify-center items-center gap-6">
 
                             <div class="flex gap-3 items-center pt-6">
-                                <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                <span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M19.5 3.75H4.5C4.08579 3.75 3.75 4.08579 3.75 4.5V19.5C3.75 19.9142 4.08579 20.25 4.5 20.25H19.5C19.9142 20.25 20.25 19.9142 20.25 19.5V4.5C20.25 4.08579 19.9142 3.75 19.5 3.75Z"
@@ -2270,7 +2283,8 @@
                             </div>
 
                             <div class="flex gap-3 items-center pt-6">
-                                <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                <span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M6.71096 13.5L3.00006 16.5V4.5C3.00006 4.30109 3.07908 4.11032 3.21973 3.96967C3.36038 3.82902 3.55115 3.75 3.75006 3.75H15.7501C15.949 3.75 16.1397 3.82902 16.2804 3.96967C16.421 4.11032 16.5001 4.30109 16.5001 4.5V12.75C16.5001 12.9489 16.421 13.1397 16.2804 13.2803C16.1397 13.421 15.949 13.5 15.7501 13.5H6.71096Z"
@@ -2286,13 +2300,13 @@
                                 <span>Comments (03)</span>
                             </div>
                         </div>
-                        <div>
+                        <div class="text-center xl:text-start">
                             <h2 class="font-bold text-[20px] leading-[28px] pt-4 pb-2">Chocolate Truffle Cake With
                                 Honey Flavor</h2>
                             <p class="text-base pb-4">Lorem ipsum dolor sit amet, consectetur elit. Non mi sed etiam a
                                 id at ultricies neque.Tempus,poten diam ac integer id tellus est.</p>
                         </div>
-                        <button class="flex gap-2 items-center py-2 rounded-md pb-6">
+                        <button class="flex gap-2 items-center py-2 rounded-md pb-6 mx-auto xl:mx-0">
                             <span class="font-Helvetica text-[14px] leading-[22px] text-[#4F4F4F]">Read more</span>
                             <span class="">
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
@@ -2319,7 +2333,7 @@
         <div class="container">
             <div class="text-center">
                 <h4 class="pb-2 text-[18px] leading-[26px] text-[#195A00] font-miniver">Partners & Clients</h4>
-                <h2 class="pb-[56px] text-[48px] leading-[56px] font-bold font-Helvetica">We work with the best pepole
+                <h2 class="pb-[56px] xl:text-[48px] leading-[56px] font-bold font-Helvetica text-[20px]">We work with the best pepole
                 </h2>
             </div>
             <div class="flex gap-[70px] items-center">
@@ -2360,11 +2374,13 @@
 
     <!-- footer -->
     <footer class="bg-[#a8bca1] mt-[108px]">
-        <div class="container">
-            <div class="py-[120px] flex-wrap xl:flex gap-[82px]">
+        <div class="container px-4 xl:px-0">
+            <div class="py-[120px] xl:flex flex-wrap gap-[82px]">
 
-                <div class="max-w-[254px] mx-auto xl:mx-0">
-                    <img src="img/logo.png" alt="">
+                <div class="xl:max-w-[254px] xl:mx-0">
+                    <div>
+                        <img src="img/logo.png" alt="">
+                    </div>
                     <p class="text-lg pt-6 pb-6 font-inter">Subscribe our newsletter and
                         get discount 25%off</p>
                     <form action="">
@@ -2418,8 +2434,9 @@
                     </div>
                     <!-- social icon -->
                 </div>
+                
                 <!-- contact -->
-                <div class="max-w-[321px] mx-auto xl:mx-0 xl:pt-0 pt-4">
+                <div class="xl:max-w-[321px] xl:mx-0 xl:pt-0 pt-4">
                     <h2 class="text-[20px] leading-7 font-bold pb-6 font-inter">Contact us</h2>
                     <div class="flex-wrap">
 
@@ -2509,37 +2526,37 @@
                 <!-- links -->
 
                 <!-- footer img gallery -->
-                <div>
+                <div class="xl:max-w-[336px]">
                     <h2 class="text-[20px] leading-7 font-bold pb-6 capitalize font-inter">Instagram Gallery</h2>
-                    <div class="grid xl:grid-cols-3 grid-cols-1 gap-1">
+                    <div class="flex flex-wrap xl:flex-nowrap gap-1">
                         <div class="grayscale-100 hover:grayscale transition ease-linear duration-300">
                             <a href="">
-                                <img src="img/unsplash_PxJ9zkM2wdA.png" alt="">
+                                <img src="img/unsplash_PxJ9zkM2wdA.png" class="w-[109px] h-[109px]" alt="">
                             </a>
                         </div>
                         <div class="grayscale-100 hover:grayscale transition ease-linear duration-300">
                             <a href="">
-                                <img src="img/unsplash_idTwDKt2j2o.png" alt="">
+                                <img src="img/unsplash_idTwDKt2j2o.png" class="w-[109px] h-[109px]" alt="">
                             </a>
                         </div>
                         <div class="grayscale-100 hover:grayscale transition ease-linear duration-300">
                             <a href="">
-                                <img src="img/unsplash__79ZJS8pV70.png" alt="">
+                                <img src="img/unsplash__79ZJS8pV70.png" class="w-[109px] h-[109px]" alt="">
                             </a>
                         </div>
                         <div class="grayscale-100 hover:grayscale transition ease-linear duration-300">
                             <a href="">
-                                <img src="img/unsplash_jeiqzOgwwKU.png" alt="">
+                                <img src="img/unsplash_jeiqzOgwwKU.png" class="w-[109px] h-[109px]" alt="">
                             </a>
                         </div>
                         <div class="grayscale-100 hover:grayscale transition ease-linear duration-300">
                             <a href="">
-                                <img src="img/unsplash_W10_NCsLVyc.png" alt="">
+                                <img src="img/unsplash_W10_NCsLVyc.png" class="w-[109px] h-[109px]" alt="">
                             </a>
                         </div>
                         <div class="grayscale-100 hover:grayscale transition ease-linear duration-300">
                             <a href="">
-                                <img src="img/unsplash_74yRjQ-cvNI.png" alt="">
+                                <img src="img/unsplash_74yRjQ-cvNI.png" class="w-[109px] h-[109px]" alt="">
                             </a>
                         </div>
                     </div>

@@ -48,7 +48,7 @@
 $('.customer-review').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 2000,
     dots: false,
     arrows: true,
@@ -72,20 +72,20 @@ function Menu(e) {
 }
 
 //menu header fixed on scroll
-$(window).on("scroll", function () {
-    var scroll = $(window).scrollTop();
-    if (scroll < 150) {
-      $(".top-menu").removeClass("scroll-header");
+// $(window).on("scroll", function () {
+//     var scroll = $(window).scrollTop();
+//     if (scroll < 150) {
+//       $(".top-menu").removeClass("scroll-header");
     
-    //   $(".brand-logo img").attr("src","img/logo.png");
-    } else {
-      $(".top-menu").addClass("scroll-header");
+//     //   $(".brand-logo img").attr("src","img/logo.png");
+//     } else {
+//       $(".top-menu").addClass("scroll-header");
     
 
-    //   $(".brand-logo img").attr("src","img/Foodtuck.png");
+//     //   $(".brand-logo img").attr("src","img/Foodtuck.png");
 
-    }
-  });
+//     }
+//   });
 
 
 //   $(document).ready(function() {
@@ -103,7 +103,7 @@ $(window).on("scroll", function () {
 //   })
 
 
-// create an array of objects with the id, trigger element (eg. button), and the content element
+//tab menu
 const tabElements = [
     {
         id: 'breakfast',

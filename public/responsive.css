@@ -1,0 +1,19 @@
+@media (max-width:767px) {
+    .customer-review .slick-next {
+       display: none !important;
+    }
+
+    .customer-review .slick-prev {
+        display: none !important;
+    }
+
+    /* single-item */
+    
+    .single-item .slick-next {
+        display: none !important;
+     }
+ 
+     .single-item .slick-prev {
+         display: none !important;
+     }
+}
