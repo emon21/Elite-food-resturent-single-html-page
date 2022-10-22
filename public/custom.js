@@ -5,7 +5,7 @@
  $('.single-item').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 2000,
     dots: false,
     arrows: true,
@@ -68,7 +68,8 @@ $(window).on("load", function () {
 function Menu(e) {
     let list = document.querySelector('ul');
     e.name === 'menu' ? (e.name = "close", list.classList.add('top-[80px]'),
-     list.classList.add('opacity-100')) : (e.name = "menu", list.classList.remove('top-[80px]'), list.classList.remove('opacity-100'))
+     list.classList.add('opacity-100')) : (e.name = "menu", list.classList.remove('top-[80px]'),
+      list.classList.remove('opacity-100'))
 }
 
 //menu header fixed on scroll
@@ -162,3 +163,14 @@ const tabs = new Tabs(tabElements, options);
 //          scrollTop:position
 //      },800);
 //  });
+
+
+// const button = document.querySelector('#menu-button');
+// const menu = document.querySelector('#menu');
+
+
+// button.addEventListener('click', () => {
+//   menu.classList.toggle('hidden');
+// });
+
+

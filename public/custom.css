@@ -287,9 +287,8 @@ overflow: hidden;
 }
 .customer-review .slick-next:before {
     content: url('../img/ArrowRight.svg');
+    
 }
-
-
 
 
 .blog-item h2{
