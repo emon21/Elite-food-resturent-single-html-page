@@ -72,20 +72,20 @@ function Menu(e) {
 }
 
 //menu header fixed on scroll
-// $(window).on("scroll", function () {
-//     var scroll = $(window).scrollTop();
-//     if (scroll < 150) {
-//       $(".top-menu").removeClass("scroll-header");
+$(window).on("scroll", function () {
+    var scroll = $(window).scrollTop();
+    if (scroll < 150) {
+      $(".top-menu").removeClass("scroll-header");
     
-//     //   $(".brand-logo img").attr("src","img/logo.png");
-//     } else {
-//       $(".top-menu").addClass("scroll-header");
+    //   $(".brand-logo img").attr("src","img/logo.png");
+    } else {
+      $(".top-menu").addClass("scroll-header");
     
 
-//     //   $(".brand-logo img").attr("src","img/Foodtuck.png");
+    //   $(".brand-logo img").attr("src","img/Foodtuck.png");
 
-//     }
-//   });
+    }
+  });
 
 
 //   $(document).ready(function() {
