@@ -17,3 +17,10 @@
          display: none !important;
      }
 }
+
+@media (max-width:480px) {
+    .video_icon{
+        width: 40px;
+        margin-top: -8px;
+    }
+}

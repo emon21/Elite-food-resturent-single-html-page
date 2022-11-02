@@ -288,6 +288,10 @@ overflow: hidden;
     /* z-index: 99999; */
 }
 
+.customer-review .slick-prev:hover {
+   color: red;
+}
+
 .customer-review .slick-prev:before {
     content: url('../img/ArrowLeft.svg');
 }
@@ -319,6 +323,8 @@ overflow: hidden;
     /* background-color: #fff; */
     display: none;
 }
+
+
 
 
 .blog-item h2{
