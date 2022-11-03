@@ -5,7 +5,7 @@
  $('.single-item').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
     dots: false,
     arrows: true,
@@ -16,16 +16,18 @@
             slidesToShow: 2,
             slidesToScroll: 1,
             infinite: true,
-            dots: true
+            dots: true,
           }
         },
         {
-          breakpoint: 991,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        },
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+             
+            }
+          },
+
         {
           breakpoint: 480,
           settings: {

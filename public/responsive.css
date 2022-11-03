@@ -1,4 +1,7 @@
 @media (max-width:767px) {
+
+    /* customer review */
+
     .customer-review .slick-next {
        display: none !important;
     }
@@ -16,6 +19,11 @@
      .single-item .slick-prev {
          display: none !important;
      }
+     
+
+     .video_icon{
+        width: 40px;
+        margin-top: -8px;
 }
 
 @media (max-width:480px) {
